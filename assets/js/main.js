@@ -219,7 +219,15 @@
     },
     {
       label: "분쟁", sub: "차지백 · 개선", duty: "Chargeback 및 결제 분쟁 관리 · 운영 개선 및 효율화",
-      on: [0, 1, 2, 4], links: ["both", "both", "off", "both"],
+      on: [0, 1, 2, 3, 4], links: ["both", "both", "both", "both"],
+      actors: [
+        { icon: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>', label: "해외카드" },
+        { icon: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l9-6 9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"/><path d="M3 21h18"/></svg>', label: "발급사" },
+        { icon: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>', label: "브랜드사" },
+        { icon: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h9l3 3v15H6z"/><path d="M9 10h6M9 14h6M9 18h4"/></svg>', label: "매입사" },
+        { icon: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg>', label: "가맹점", me: true },
+      ],
+      legend: ["차지백 접수 (해외카드 → 가맹점)", "소명자료 제출 (가맹점 → 해외카드)"],
       title: "결제 이후의 차지백과 민원, 그리고 재발 방지까지",
       ctx: ["해외카드 차지백은 기한 안에 소명하지 못하면 매입대금이 차감됩니다.", "처리 흐름을 SOP로 남기고, 반복되는 민원은 원인이 된 구조를 바꿉니다."],
       mine: ["해외카드 차지백 접수 · 분석 · 소명 · 결과 관리 주담당 (16차수 · 약 30건)", "처리 순서를 SOP로 작성해 인계", "혜택 미적용 민원을 전용 가맹점번호 매출 분기로 해결", "개설 · 테스트카드 요청 Jira 일원화, 서류 생성 도구 공동 개발"],
@@ -234,6 +242,9 @@
     const actors = $$(".actor", lifeEl);
     const links = $$(".link", lifeEl);
     const life = $$("#lifeline span");
+    const legendEl = $("#lifeLegend");
+    const defLegend = legendEl ? legendEl.innerHTML : "";
+    const defActors = actors.map((a) => ({ html: a.innerHTML, me: a.classList.contains("actor--me") }));
     tabs.innerHTML = STAGES.map((s, i) => `<button class="life__tab" role="tab" type="button" aria-selected="${i === 0}" data-i="${i}">${s.label}<small>${s.sub}</small><span class="bar"></span></button>`).join("");
     const paneHTML = (s) => `
       <h3>${s.title}</h3>
@@ -252,7 +263,13 @@
       const s = STAGES[i];
       $$(".life__tab", tabs).forEach((t, k) => t.setAttribute("aria-selected", k === i));
       life.forEach((l, k) => l.classList.toggle("is-on", k === i));
-      actors.forEach((a, k) => { a.classList.toggle("is-on", s.on.includes(k)); a.classList.toggle("is-dim", !s.on.includes(k)); });
+      actors.forEach((a, k) => {
+        const alt = s.actors && s.actors[k];
+        if (alt) { a.innerHTML = `<b>${alt.icon}</b><span>${alt.label}</span>`; a.classList.toggle("actor--me", !!alt.me); }
+        else { a.innerHTML = defActors[k].html; a.classList.toggle("actor--me", defActors[k].me); }
+        a.classList.toggle("is-on", s.on.includes(k)); a.classList.toggle("is-dim", !s.on.includes(k));
+      });
+      if (legendEl) legendEl.innerHTML = s.legend ? `<span>${s.legend[0]}</span><span class="m">${s.legend[1]}</span>` : defLegend;
       links.forEach((l, k) => { const st = s.links[k]; l.className = "link" + (st === "off" ? "" : st === "opt" ? " is-opt" : " " + st); });
       pane.innerHTML = paneHTML(s);
       pane.classList.remove("pane-in"); void pane.offsetWidth; pane.classList.add("pane-in");
