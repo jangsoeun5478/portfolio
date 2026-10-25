@@ -35,7 +35,7 @@
       <p class="lead">경력기술서에 적은 일 가운데 다섯 가지를 골라, 어떤 순서로 판단하고 무엇을 만들었는지 그려 보았습니다.</p>
       <nav class="pfnav" aria-label="사례 목록">
         <a href="#open"><small>01 · 청약 · 심사</small><b>개설 단계와 체크리스트</b></a>
-        <a href="#global"><small>02 · 해외 가맹점</small><b>결제사가 망설일 때 준비한 것</b></a>
+        <a href="#global"><small>02 · 해외 가맹점</small><b>카드사가 망설일 때 준비한 것</b></a>
         <a href="#cb"><small>03 · Chargeback</small><b>기한 안에 끝내는 처리 순서</b></a>
         <a href="#trace"><small>04 · 운영 이슈</small><b>증상 · 원인 · 조치 기록</b></a>
         <a href="#ai"><small>05 · 운영 개선</small><b>한 번 입력, 여러 서류</b></a>
@@ -55,7 +55,7 @@
       <p class="subhead">개설 주요 단계와 소요일 <small>영업일 약 30일 전 요청 기준</small></p>
       <ol class="steps">
         <li><small>단계 1</small><b>요청 접수</b><span>Jira 템플릿</span></li>
-        <li><small>단계 2</small><b>결제사 개설</b><span>약 5~7일</span></li>
+        <li><small>단계 2</small><b>카드사 개설</b><span>약 5~7일</span></li>
         <li><small>단계 3</small><b>VAN ID 채번</b><span>약 2일</span></li>
         <li><small>단계 4</small><b>하위몰 심사</b><span>약 7일</span></li>
         <li><small>단계 5</small><b>QA</b><span>약 5일</span></li>
@@ -71,8 +71,8 @@
             <label><input type="checkbox" id="ck3" /><span>PG · 오픈마켓 업종 구분</span></label>
           </div>
           <div class="check__col">
-            <h4>결제사별</h4>
-            <label><input type="checkbox" id="ck4" /><span>부분취소 등 결제사 특약</span></label>
+            <h4>카드사별</h4>
+            <label><input type="checkbox" id="ck4" /><span>부분취소 등 카드사 특약</span></label>
             <label><input type="checkbox" id="ck5" /><span>인증 · 한도 조건</span></label>
             <label><input type="checkbox" id="ck6" /><span>환금성 업종 규정</span></label>
           </div>
@@ -93,13 +93,13 @@
         <span class="pcase__no">02</span>
         <div>
           <div class="pcase__tags"><span class="chip">해외 가맹점 · 국내 카드 결제</span><span class="chip chip--plain">애플 · 해외 PSP</span></div>
-          <h2>결제사가 해외 가맹점 연동을 망설일 때, 판단에 필요한 자료를 먼저 채웠습니다</h2>
-          <p>해외 가맹점은 결제사가 매출 규모를 미리 가늠하기 어렵습니다.<br />결제사가 무엇을 걱정하는지부터 정리하고, 그 걱정에 답하는 자료로 입점과 하위몰 심사를 진행했습니다.</p>
+          <h2>카드사가 해외 가맹점 연동을 망설일 때, 판단에 필요한 자료를 먼저 채웠습니다</h2>
+          <p>해외 가맹점은 카드사가 매출 규모를 미리 가늠하기 어렵습니다.<br />카드사가 무엇을 걱정하는지부터 정리하고, 그 걱정에 답하는 자료로 입점과 하위몰 심사를 진행했습니다.</p>
         </div>
       </div>
       <div class="think">
         <div>
-          <small>결제사가 보는 것</small>
+          <small>카드사가 보는 것</small>
           <h4>연동을 망설이는 이유</h4>
           <ul>
             <li>매출 규모를 미리 알기 어려움</li>
@@ -112,7 +112,7 @@
           <h4>판단에 필요한 자료</h4>
           <ul>
             <li>연동이 필요한 이유를 정리한 근거자료</li>
-            <li>결제사별 개설 조건에 맞춘 업종과 서류</li>
+            <li>카드사별 개설 조건에 맞춘 업종과 서류</li>
             <li>국세청 해외사업자 가이드를 근거로 한 세무 기준 소명</li>
           </ul>
         </div>
@@ -123,14 +123,14 @@
         </div>
       </div>
       <p class="subhead">연결 구조</p>
-      <div class="gflow" aria-label="해외 가맹점에서 결제사까지 연결 구조">
+      <div class="gflow" aria-label="해외 가맹점에서 카드사까지 연결 구조">
         <div class="gflow__node"><small>해외 가맹점</small><b>애플 · 해외 PSP</b></div>
         <i aria-hidden="true"></i>
         <div class="gflow__node is-me"><small>PG · 직접 세팅</small><b>가맹점번호 · 결제 세팅</b></div>
         <i aria-hidden="true"></i>
         <div class="gflow__node"><small>VAN</small><b>VAN ID 채번</b></div>
         <i aria-hidden="true"></i>
-        <div class="gflow__node"><small>결제사</small><b>입점 · 하위몰 심사</b></div>
+        <div class="gflow__node"><small>카드사</small><b>입점 · 하위몰 심사</b></div>
       </div>
       <div class="tabs" id="gtabs">
         <div class="tabs__btns" role="tablist" aria-label="연동하며 함께 정한 것">
@@ -142,8 +142,8 @@
         <div class="tabs__pane" role="tabpanel" data-g="1">
           <h4>판단할 자료를 먼저 건넵니다</h4>
           <ul>
-            <li>연동이 왜 필요한지, 어떤 거래가 일어날지를 자료로 정리해 결제사에 전달</li>
-            <li>기존 방식으로 개설이 어려운 결제사는 조건에 맞춰 업종과 서류를 조정</li>
+            <li>연동이 왜 필요한지, 어떤 거래가 일어날지를 자료로 정리해 카드사에 전달</li>
+            <li>기존 방식으로 개설이 어려운 카드사는 조건에 맞춰 업종과 서류를 조정</li>
           </ul>
         </div>
         <div class="tabs__pane" role="tabpanel" data-g="2" hidden>
@@ -156,19 +156,19 @@
         <div class="tabs__pane" role="tabpanel" data-g="3" hidden>
           <h4>해외 앱스토어 매출의 소득공제</h4>
           <ul>
-            <li>국세청 해외사업자 가이드를 근거로 소득공제 제외 기준을 정리해 결제사에 소명</li>
+            <li>국세청 해외사업자 가이드를 근거로 소득공제 제외 기준을 정리해 카드사에 소명</li>
             <li>같은 기준을 사내에 공유해 연말정산 대사에 반영</li>
           </ul>
         </div>
         <div class="tabs__pane" role="tabpanel" data-g="4" hidden>
           <h4>취소 분쟁이 생기면 받을 곳</h4>
           <ul>
-            <li>글로벌 앱마켓 연동에 맞춰 결제사의 매출 취소 중재 공문을 받을 대표 창구를 정해 회신</li>
+            <li>글로벌 앱마켓 연동에 맞춰 카드사의 매출 취소 중재 공문을 받을 대표 창구를 정해 회신</li>
             <li>해외카드 차지백 처리 흐름은 <a href="#cb">03 사례</a>에 정리했습니다</li>
           </ul>
         </div>
       </div>
-      <p class="retro"><b>배운 점</b>결제사가 망설인 이유는 판단할 자료가 부족했기 때문이었습니다.<br />자료를 먼저 채우니 협의가 빨라졌습니다.</p>
+      <p class="retro"><b>배운 점</b>카드사가 망설인 이유는 판단할 자료가 부족했기 때문이었습니다.<br />자료를 먼저 채우니 협의가 빨라졌습니다.</p>
     </section>
 
     <!-- 02 차지백 -->
@@ -178,16 +178,16 @@
         <div>
           <div class="pcase__tags"><span class="chip">Chargeback · 결제 분쟁</span><span class="chip chip--plain">해외카드 결제 서비스</span></div>
           <h2>차지백은 같은 순서로 처리해야 기한을 놓치지 않습니다</h2>
-          <p>증빙은 서비스팀에 있고 소명 기한은 결제사가 정합니다.<br />둘 사이에서 기한을 놓치지 않도록 접수부터 결과 기록까지 순서를 고정했습니다.</p>
+          <p>증빙은 서비스팀에 있고 소명 기한은 카드사가 정합니다.<br />둘 사이에서 기한을 놓치지 않도록 접수부터 결과 기록까지 순서를 고정했습니다.</p>
         </div>
       </div>
       <p class="subhead">처리 순서 <small>결과를 골라 보세요</small></p>
       <div class="cbflow" id="cbFlow">
         <ol>
-          <li><small>STEP 1</small><b>접수</b><p>결제사 차지백 공문 접수</p></li>
+          <li><small>STEP 1</small><b>접수</b><p>카드사 차지백 공문 접수</p></li>
           <li><small>STEP 2</small><b>현황 기록</b><p>주문번호 · 금액 · 소명 기한을 현황표에 기록</p></li>
           <li><small>STEP 3</small><b>분석 · 증빙 요청</b><p>사유를 분석하고 서비스팀에 필요한 증빙을 요청</p></li>
-          <li><small>STEP 4</small><b>소명 제출</b><p>기한 안에 소명자료를 결제사에 제출</p></li>
+          <li><small>STEP 4</small><b>소명 제출</b><p>기한 안에 소명자료를 카드사에 제출</p></li>
           <li><small>STEP 5</small><b>결과 관리</b><p>인정 · 재접수 · 패소를 기록하고 후속 안내</p></li>
         </ol>
         <div class="cbflow__bar">
@@ -225,29 +225,29 @@
         <div>
           <div class="pcase__tags"><span class="chip">운영 이슈 대응</span></div>
           <h2>승인 실패가 생기면 증상 · 원인 · 조치 순서로 기록했습니다</h2>
-          <p>겉으로 보이는 증상은 비슷해도 원인은 인증 설정, 매핑, 한도처럼 제각각입니다.<br />결제사와 협의하며 처리한 세 건을 같은 틀로 정리했습니다.</p>
+          <p>겉으로 보이는 증상은 비슷해도 원인은 인증 설정, 매핑, 한도처럼 제각각입니다.<br />카드사와 협의하며 처리한 세 건을 같은 틀로 정리했습니다.</p>
         </div>
       </div>
       <div class="trace" id="traceBox">
         <div class="trace__list" role="tablist" aria-label="이슈 사례">
           <button class="trace__item" role="tab" type="button" data-t="1" aria-selected="true"><small>승인 거절</small><b>오픈 전 게임 결제 테스트</b></button>
-          <button class="trace__item" role="tab" type="button" data-t="2" aria-selected="false"><small>승인 실패</small><b>결제사 미매핑</b></button>
-          <button class="trace__item" role="tab" type="button" data-t="3" aria-selected="false"><small>취소 반송</small><b>결제사 미수금 한도</b></button>
+          <button class="trace__item" role="tab" type="button" data-t="2" aria-selected="false"><small>승인 실패</small><b>카드사 미매핑</b></button>
+          <button class="trace__item" role="tab" type="button" data-t="3" aria-selected="false"><small>취소 반송</small><b>카드사 미수금 한도</b></button>
         </div>
         <div class="trace__pane" role="tabpanel" data-t="1">
-          <div class="trace__step"><small>증상</small><p>오픈 전 베타 테스트에서 일부 결제사의 승인이 거절됨</p></div>
+          <div class="trace__step"><small>증상</small><p>오픈 전 베타 테스트에서 일부 카드사의 승인이 거절됨</p></div>
           <div class="trace__step"><small>원인</small><p>환금성 구분값과 2차 인증 적용이 빠져 있었음</p></div>
-          <div class="trace__step"><small>조치</small><p>결제사에 원인 확인을 요청하고 내부 설정을 함께 점검해 오픈 일정 안에 해결</p></div>
+          <div class="trace__step"><small>조치</small><p>카드사에 원인 확인을 요청하고 내부 설정을 함께 점검해 오픈 일정 안에 해결</p></div>
         </div>
         <div class="trace__pane" role="tabpanel" data-t="2" hidden>
           <div class="trace__step"><small>증상</small><p>특정 업종 가맹점의 결제가 실패함</p></div>
-          <div class="trace__step"><small>원인</small><p>결제사 쪽 매핑이 되어 있지 않았음</p></div>
-          <div class="trace__step"><small>조치</small><p>결제사에 매핑을 요청하고 결제가 정상 처리되는지 확인</p></div>
+          <div class="trace__step"><small>원인</small><p>카드사 쪽 매핑이 되어 있지 않았음</p></div>
+          <div class="trace__step"><small>조치</small><p>카드사에 매핑을 요청하고 결제가 정상 처리되는지 확인</p></div>
         </div>
         <div class="trace__pane" role="tabpanel" data-t="3" hidden>
           <div class="trace__step"><small>증상</small><p>결제 취소가 반송됨</p></div>
-          <div class="trace__step"><small>원인</small><p>결제사의 미수금 한도가 부족했음</p></div>
-          <div class="trace__step"><small>조치</small><p>결제사의 한도 산정 기준을 확인해 내부에 공유</p></div>
+          <div class="trace__step"><small>원인</small><p>카드사의 미수금 한도가 부족했음</p></div>
+          <div class="trace__step"><small>조치</small><p>카드사의 한도 산정 기준을 확인해 내부에 공유</p></div>
         </div>
       </div>
     </section>
@@ -259,7 +259,7 @@
         <div>
           <div class="pcase__tags"><span class="chip">AI · 자동화 도구 활용</span><span class="chip chip--plain">동료와 공동 개발</span></div>
           <h2>같은 정보를 서류마다 다시 적지 않도록, 한 번 입력으로 여러 서류를</h2>
-          <p>결제사마다 양식은 달라도 신청일 · 간판명 · 대금 입금계좌 · 요청자는 늘 같습니다.<br />이 네 칸만 채우면 서류가 한꺼번에 만들어지는 흐름을 아래에서 직접 눌러 보실 수 있습니다.</p>
+          <p>카드사마다 양식은 달라도 신청일 · 간판명 · 대금 입금계좌 · 요청자는 늘 같습니다.<br />이 네 칸만 채우면 서류가 한꺼번에 만들어지는 흐름을 아래에서 직접 눌러 보실 수 있습니다.</p>
         </div>
       </div>
       <div class="demo">
@@ -272,7 +272,7 @@
         </form>
         <div class="docs" id="docs" aria-live="polite"></div>
       </div>
-      <p class="note">※ 가상 데이터로 동작 원리를 재현한 데모입니다.<br />결제사명과 양식은 예시입니다.</p>
+      <p class="note">※ 가상 데이터로 동작 원리를 재현한 데모입니다.<br />카드사명과 양식은 예시입니다.</p>
     </section>
 
     <section class="closing">
