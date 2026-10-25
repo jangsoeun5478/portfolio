@@ -58,14 +58,16 @@ ul, ol { padding: 0; list-style: none; }
 .sh h2 { font-size: 22px; }
 
 /* 홈 */
-.hero { display: grid; gap: 18px; padding-top: 8px; }
+.hero { display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; padding-top: 8px; }
+.hero-text { display: grid; gap: 18px; min-width: 0; }
 .hero .kicker { font-size: 14px; color: var(--accent); font-weight: 600; }
-.hero h1 { font-size: 40px; line-height: 1.32; }
+.hero h1 { font-size: 30px; line-height: 1.4; }
 .hero p { color: var(--sub); font-size: 17px; }
-.who { display: flex; align-items: center; gap: 14px; margin-top: 6px; }
-.who img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; background: var(--wash); }
-.who b { display: block; }
+.who { display: grid; justify-items: center; gap: 4px; padding: 22px 26px; border: 1px solid var(--line); border-radius: var(--r); text-align: center; }
+.who img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; background: var(--wash); margin-bottom: 6px; }
+.who b { font-size: 18px; }
 .who span { color: var(--sub); font-size: 14px; }
+.m-br { display: none; }
 
 .docs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .doc-card { display: grid; gap: 4px; padding: 18px 18px 16px; border: 1px solid var(--line); border-radius: var(--r); text-decoration: none; transition: border-color .15s, transform .15s; }
@@ -224,7 +226,14 @@ ul, ol { padding: 0; list-style: none; }
   .nav a { padding: 6px 7px; font-size: 13px; }
   .brand span, .btn-print { display: none; }
   .wrap { padding-top: 36px; gap: 48px; }
-  .hero h1 { font-size: 28px; }
+  .hero { grid-template-columns: 1fr; gap: 24px; }
+  .who { order: -1; justify-self: stretch; grid-template-columns: auto 1fr; justify-items: start; text-align: left; column-gap: 14px; row-gap: 0; padding: 14px 16px; }
+  .who img { width: 52px; height: 52px; margin: 0; grid-row: span 2; }
+  .who b { font-size: 16px; align-self: end; }
+  .who span { align-self: start; }
+  .m-br { display: inline; }
+  .hero h1 { font-size: 24px; }
+  .hero p br { display: none; }
   .doc-head h1 { font-size: 27px; }
   .case-h h2 { font-size: 21px; }
   .docs, .lanes, .three, .check, .demo { grid-template-columns: 1fr; }
