@@ -1,105 +1,94 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>장소은 | 이력서</title>
-  <meta name="description" content="장소은 이력서 · PG 카드 결제 운영" />
-  <meta name="theme-color" content="#336cfa" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23336cfa'/><text x='32' y='43' font-size='30' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@500;600;700&display=swap" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>장소은 | 이력서</title>
+<meta name="description" content="장소은 이력서 · PG 카드 결제 운영">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
-  <header class="nav">
-    <div class="wrap nav__in">
-      <a class="nav__brand" href="index.html">장소은 <small>결제 운영</small></a>
-      <nav class="nav__links" aria-label="페이지">
-        <a href="index.html">홈</a>
-        <a href="resume.html" aria-current="page">이력서</a>
-        <a href="career.html">경력기술서</a>
-        <a href="portfolio.html">포트폴리오</a>
-      </nav>
-      <button class="nav__print" type="button" id="printBtn">PDF 저장</button>
-    </div>
-  </header>
+<header class="top"><div class="top-in">
+  <a class="brand" href="index.html">장소은<span>결제 운영</span></a>
+  <nav class="nav" aria-label="서류">
+    <a href="index.html">홈</a>
+    <a href="resume.html" aria-current="page">이력서</a>
+    <a href="career.html">경력기술서</a>
+    <a href="portfolio.html">포트폴리오</a>
+  </nav>
+  <button class="btn-print" type="button" data-print>PDF 저장</button>
+</div></header>
 
-  <main class="wrap wrap--narrow">
-    <div class="dochead no-print">
-      <p class="label">지원 서류 01</p>
-      <h1 class="h2">이력서</h1>
-    </div>
-
-    <article class="paper rv">
-      <header class="r-head">
-        <img src="assets/img/profile.webp" alt="장소은 프로필 사진" width="84" height="84" />
-        <div>
-          <h1>장소은</h1>
-          <p>PG 카드 결제 운영</p>
-          <code>thdms5478@naver.com</code>
-        </div>
-      </header>
-
-      <div class="rv__intro">
-        <p>국내 · 해외 가맹점의 입점부터 차지백까지, PG 카드 결제 운영을 맡고 있습니다.</p>
+<main class="wrap">
+  <section class="doc-head">
+    <p class="kicker">지원 서류 01</p>
+    <div class="profile">
+      <img src="assets/img/profile.webp" alt="장소은 프로필 사진" width="88" height="88">
+      <div>
+        <h1>장소은</h1>
+        <p class="role">PG 카드 결제 운영 · 네이버파이낸셜 결제인프라</p>
+        <p class="mail">thdms5478@naver.com</p>
       </div>
+    </div>
+    <p class="lead">국내·해외 가맹점의 입점, 심사, 정책, 정산, 분쟁을 카드사와 직접 협의하며 운영합니다.<br>반복되는 일은 기준과 도구로 표준화하고, 문제는 응답코드와 로그로 원인부터 찾습니다.</p>
+  </section>
 
-      <section>
-        <h2>핵심 성과</h2>
-        <div class="r-sum">
-          <div><strong>매출 발생 중</strong><span>애플 · 해외 PSP 국내 카드 결제 연동</span></div>
-          <div><strong>일 1,000만 원</strong><span>게임 결제 한도 예외 승인 (기존 50만 원)</span></div>
-          <div><strong>월 약 8,000억 원</strong><span>매입 VAN 다중화 · PM</span></div>
-          <div><strong>10초 내외</strong><span>개설 서류 작성 (기존 건당 약 30분)</span></div>
-        </div>
-      </section>
+  <section class="sec" aria-labelledby="h-facts">
+    <div class="sh"><span class="n">1</span><h2 id="h-facts">핵심 성과</h2></div>
+    <div class="facts">
+      <div class="fact"><b>일 1,000만 원</b><span>게임 결제 한도 예외 승인<br>(기존 50만 원)</span></div>
+      <div class="fact"><b>월 약 8,000억 원</b><span>매입 VAN 다중화 PM<br>중단 없이 전환</span></div>
+      <div class="fact"><b>10초 내외</b><span>개설 서류 작성 시간<br>(기존 건당 약 30분)</span></div>
+      <div class="fact"><b>애플 · 해외 PSP</b><span>국내 카드 결제 연동<br>연동 후 매출 발생</span></div>
+    </div>
+  </section>
 
-      <section>
-        <h2>경력</h2>
-        <div class="rv__job">
-          <b>네이버파이낸셜주식회사</b><span>2024.11 – 재직 중</span>
-          <p>결제인프라 · PG 카드 결제 운영</p>
-        </div>
-        <div class="tblwrap"><table class="rtable">
-          <thead><tr><th>영역</th><th>주요 업무</th></tr></thead>
-          <tbody>
-            <tr><th>가맹점 입점</th><td>국내 · 해외 사업자 가맹점의 가맹점번호 채번, 특약 반영, 단말기ID 채번, 하위몰 심사, QA, 실제 연동</td></tr>
-            <tr><th>해외 가맹점 연동</th><td>애플 · 해외 PSP의 국내 카드 결제 연동, 카드사 입점 협의</td></tr>
-            <tr><th>하위몰 심사</th><td>심사 부서에 카드사 기준 가이드 제공, 반송 시 사유 확인과 카드사 협의</td></tr>
-            <tr><th>카드사 정책</th><td>카드사별 인증 · 한도 정책 관리, 게임 결제 한도 예외 승인 협의</td></tr>
-            <tr><th>매입 · 정산</th><td>매입 VAN 다중화 PM, 승인 실패 원인 규명, 차액정산 반송 정리</td></tr>
-            <tr><th>차지백</th><td>해외카드 차지백 접수 · 분석 · 소명 · 결과 관리, 처리 SOP 작성</td></tr>
-            <tr><th>운영 개선</th><td>개설 요청 경로 일원화, 개설 서류 생성 도구 공동 개발</td></tr>
-          </tbody>
-        </table></div>
-      </section>
+  <section class="sec" aria-labelledby="h-career">
+    <div class="sh"><span class="n">2</span><h2 id="h-career">경력</h2></div>
+    <div class="job">
+      <span class="when">2024.11 – 재직 중</span>
+      <div><b>네이버파이낸셜주식회사</b><span>결제인프라 · PG 카드 결제 운영</span></div>
+    </div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>영역</th><th>주요 업무</th></tr></thead>
+        <tbody>
+          <tr><td>가맹점 입점</td><td>국내·해외 사업자 가맹점의 가맹점번호·단말기ID 채번, 특약 반영, QA, 실제 연동</td></tr>
+          <tr><td>하위몰 심사</td><td>Sub-merchant(하위몰) 심사 반송 사유 확인과 카드사 협의, 심사 부서에 카드사 기준 가이드 제공</td></tr>
+          <tr><td>해외 가맹점</td><td>애플·해외 PSP가 국내 카드로 결제를 받도록 카드사 입점 협의</td></tr>
+          <tr><td>카드사 정책</td><td>카드사별 인증·한도 정책 관리, 게임 결제 한도 예외 협의</td></tr>
+          <tr><td>매입·정산</td><td>매입 VAN 다중화 PM, 승인 실패·차액정산 반송 원인 분석</td></tr>
+          <tr><td>차지백</td><td>해외카드 차지백 접수·분석·소명·결과 관리, 처리 SOP 작성</td></tr>
+          <tr><td>운영 개선</td><td>반복 민원의 원인 개선, 개설 요청 경로 일원화, 개설 서류 생성 도구 공동 개발</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-      <section>
-        <h2>이전 경력 · 학력</h2>
-        <div class="rv__line"><b>이전 경력</b><span>에이치에스효성더클래스 · 벤츠 죽전서비스센터 SA</span><time>2022.06 – 2024.03</time></div>
-        <div class="rv__line"><b>학력</b><span>동원대학교 경찰행정과 졸업</span><time>2019.03 – 2021.02</time></div>
-      </section>
+  <section class="sec" aria-labelledby="h-prev">
+    <div class="sh"><span class="n">3</span><h2 id="h-prev">이전 경력 · 학력</h2></div>
+    <div class="job">
+      <span class="when">2022.06 – 2024.03</span>
+      <div><b>에이치에스효성더클래스 · 벤츠 죽전서비스센터</b><span>SA (Service Advisor) · 고객 응대와 예약 관리</span></div>
+    </div>
+    <div class="job">
+      <span class="when">2019.03 – 2021.02</span>
+      <div><b>동원대학교 경찰행정과</b><span>졸업</span></div>
+    </div>
+  </section>
 
-      <section>
-        <h2>보유 기술</h2>
-        <div class="skills">
-          <span class="chip chip--plain">Jira · OSS</span><span class="chip chip--plain">SQL</span><span class="chip chip--plain">Excel · Word</span><span class="chip chip--plain">Confluence</span><span class="chip chip--plain">Slack</span><span class="chip chip--plain">Claude Code · VS Code</span><span class="chip chip--plain">Figma · Notion</span>
-        </div>
-      </section>
-    </article>
+  <section class="sec" aria-labelledby="h-skill">
+    <div class="sh"><span class="n">4</span><h2 id="h-skill">보유 기술</h2></div>
+    <div class="chips">
+      <span class="chip">Jira · OSS</span><span class="chip">SQL</span><span class="chip">Excel · Word</span><span class="chip">Confluence</span>
+      <span class="chip">Slack</span><span class="chip">Claude Code · VS Code</span><span class="chip">Figma · Notion</span>
+    </div>
+  </section>
 
-    <nav class="pager" aria-label="문서 이동">
-      <a href="index.html"><small>← 이전</small><b>홈</b></a>
-      <a href="career.html"><small>다음 →</small><b>경력기술서</b></a>
-    </nav>
-  </main>
-
-  <footer class="footer"><div class="wrap">© 2026 장소은</div></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="assets/js/main.js"></script>
+  <nav class="pager" aria-label="서류 이동"><a href="index.html">← <b>홈</b></a><a href="career.html">다음 · <b>경력기술서</b> →</a></nav>
+</main>
+<footer class="foot">© 2026 장소은</footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

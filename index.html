@@ -1,102 +1,117 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>장소은 | 결제 운영</title>
-  <meta name="description" content="국내 · 해외 가맹점의 입점부터 차지백까지, 카드 결제 운영을 맡아 온 장소은" />
-  <meta property="og:title" content="장소은 | 결제 운영" />
-  <meta property="og:description" content="결제는 신뢰로 움직입니다. 그 신뢰가 끊기지 않게 운영해 왔습니다." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#336cfa" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23336cfa'/><text x='32' y='43' font-size='30' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@500;600;700&display=swap" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>장소은 | 결제 운영</title>
+<meta name="description" content="온라인 결제서비스 운영 지원 · 장소은의 이력서, 경력기술서, 포트폴리오">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
-  <header class="nav">
-    <div class="wrap nav__in">
-      <a class="nav__brand" href="index.html">장소은 <small>결제 운영</small></a>
-      <nav class="nav__links" aria-label="페이지">
-        <a href="index.html" aria-current="page">홈</a>
-        <a href="resume.html">이력서</a>
-        <a href="career.html">경력기술서</a>
-        <a href="portfolio.html">포트폴리오</a>
-      </nav>
-      <button class="nav__print" type="button" id="printBtn">PDF 저장</button>
+<header class="top"><div class="top-in">
+  <a class="brand" href="index.html">장소은<span>결제 운영</span></a>
+  <nav class="nav" aria-label="서류">
+    <a href="index.html" aria-current="page">홈</a>
+    <a href="resume.html">이력서</a>
+    <a href="career.html">경력기술서</a>
+    <a href="portfolio.html">포트폴리오</a>
+  </nav>
+  <button class="btn-print" type="button" data-print>PDF 저장</button>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <p class="kicker">온라인 결제서비스 운영 지원</p>
+    <h1>결제는 신뢰로 움직입니다.<br>그 신뢰가 끊기지 않게 운영해 왔습니다.</h1>
+    <p>네이버파이낸셜 결제인프라에서 가맹점 입점부터 차지백까지 PG 카드 결제 운영을 맡고 있습니다.<br>국내 가맹점 운영을 바탕으로 해외 가맹점과 해외카드 결제까지 다뤘습니다.</p>
+    <div class="who">
+      <img src="assets/img/profile.webp" alt="장소은 프로필 사진" width="52" height="52">
+      <div><b>장소은</b><span>thdms5478@naver.com</span></div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="hero">
-      <div class="wrap hero__grid">
-        <div class="hero__text">
-          <h1 class="h1 h1--hero"><span>결제는 신뢰로 움직입니다.</span> <span>그 신뢰가 끊기지 않게 운영해 왔습니다.</span></h1>
-          <nav class="hero__docs hero__docs--strong" aria-label="지원 서류 바로가기">
-            <p>지원 서류</p>
-            <a href="resume.html"><small>1분</small><b>이력서</b><span>경력과 핵심 성과</span></a>
-            <a href="career.html"><small>5분</small><b>경력기술서</b><span>업무별 배경과 결과</span></a>
-            <a href="portfolio.html"><small>과정</small><b>포트폴리오</b><span>일하는 방식 다섯 가지</span></a>
-          </nav>
-        </div>
-        <aside class="idcard" aria-label="프로필">
-          <div class="idcard__top">
-            <img src="assets/img/profile.webp" alt="장소은 프로필 사진" width="72" height="72" />
-            <div class="idcard__name">장소은</div>
-          </div>
-          <ul class="idcard__facts">
-            <li><span>지원</span><b>온라인 결제서비스 운영</b></li>
-            <li><span>이메일</span><b>thdms5478@naver.com</b></li>
-          </ul>
-        </aside>
+  <section class="sec" aria-labelledby="h-docs">
+    <div class="sh"><span class="n">1</span><h2 id="h-docs">지원 서류</h2></div>
+    <div class="docs">
+      <a class="doc-card" href="resume.html"><span class="no">01 · 1분</span><b>이력서</b><span>경력과 핵심 성과</span></a>
+      <a class="doc-card" href="career.html"><span class="no">02 · 5분</span><b>경력기술서</b><span>업무별 과제와 결과</span></a>
+      <a class="doc-card" href="portfolio.html"><span class="no">03 · 과정</span><b>포트폴리오</b><span>일하는 방식 다섯 가지</span></a>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-range">
+    <div class="sh"><span class="n">2</span><h2 id="h-range">다뤄 본 결제 범위</h2></div>
+    <div class="lanes">
+      <div class="lane">
+        <span class="route">국내카드 → 국내 가맹점</span>
+        <ul><li>입점 · 심사 · 정책 · 정산</li><li>국내 결제 운영 전반</li></ul>
+        <a href="career.html#p1">경력기술서 2-1 →</a>
       </div>
-    </section>
-
-    <section class="sec sec--band" id="process">
-      <div class="wrap">
-        <div class="sec__head">
-          <h2 class="h2">가맹점 입점부터 분쟁까지, 단계별로 맡아 온 일</h2>
-        </div>
-        <div class="life" id="life">
-          <div class="life__tabs" role="tablist" aria-label="결제 운영 단계"></div>
-          <div class="life__body">
-            <div class="actors" aria-hidden="true">
-              <div class="actor"><b><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></b><span>고객</span></div>
-              <div class="link"><i></i><i></i></div>
-              <div class="actor"><b><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg></b><span>가맹점</span></div>
-              <div class="link"><i></i><i></i></div>
-              <div class="actor actor--me"><b>PG</b><span>결제 운영</span></div>
-              <div class="link"><i></i><i></i></div>
-              <div class="actor"><b>VAN</b><span>VAN사</span></div>
-              <div class="link"><i></i><i></i></div>
-              <div class="actor"><b><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></b><span>카드사</span></div>
-            </div>
-            <div class="life__pane" id="lifePane"></div>
-          </div>
-        </div>
+      <div class="lane">
+        <span class="route">국내카드 → 해외 가맹점</span>
+        <ul><li>해외 가맹점의 국내 카드 결제</li><li>카드사 입점 협의</li></ul>
+        <a href="career.html#p2">경력기술서 2-2 →</a>
       </div>
-    </section>
-
-    <section class="wrap">
-      <div class="closing">
-        <div>
-          <h2>국내에서 시작해 해외까지, 결제 운영을 더 깊게 하고 싶습니다</h2>
-          <p>서류에 다 담지 못한 과정은 면접에서 직접 말씀드리겠습니다.</p>
-        </div>
-        <div class="closing__mail">
-          <code>thdms5478@naver.com</code>
-          <button class="btn btn--solid" type="button" data-copy="thdms5478@naver.com">이메일 복사</button>
-        </div>
+      <div class="lane">
+        <span class="route">해외카드 → 국내 가맹점</span>
+        <ul><li>해외카드 결제 지원</li><li>차지백 접수부터 결과까지</li></ul>
+        <a href="career.html#p6">경력기술서 2-6 →</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="footer"><div class="wrap">© 2026 장소은</div></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="assets/js/main.js"></script>
+  <section class="sec" aria-labelledby="h-steps" data-tab-scope>
+    <div class="sh"><span class="n">3</span><h2 id="h-steps">단계별로 맡아 온 일</h2></div>
+    <div class="steps" role="tablist" data-tabs>
+      <button type="button" role="tab" aria-selected="true" data-target="s1"><b>입점</b>세팅</button>
+      <button type="button" role="tab" aria-selected="false" data-target="s2"><b>심사</b>하위몰</button>
+      <button type="button" role="tab" aria-selected="false" data-target="s3"><b>승인</b>정책·한도</button>
+      <button type="button" role="tab" aria-selected="false" data-target="s4"><b>매입</b>VAN·정산</button>
+      <button type="button" role="tab" aria-selected="false" data-target="s5"><b>분쟁</b>차지백</button>
+      <button type="button" role="tab" aria-selected="false" data-target="s6"><b>개선</b>VOC·자동화</button>
+    </div>
+    <div class="step-panel print-show" role="tabpanel" data-panel="s1" data-label="입점">
+      <h3>가맹점이 결제를 시작하기까지</h3>
+      <ul><li>가맹점번호·단말기ID 채번과 카드사별 특약 반영</li><li>QA를 거쳐 실매출 발생까지 확인</li></ul>
+      <a href="career.html#p1">경력기술서 2-1 →</a>
+    </div>
+    <div class="step-panel print-show" role="tabpanel" data-panel="s2" data-label="심사" hidden>
+      <h3>카드사 기준에 맞춰 심사가 멈추지 않도록</h3>
+      <ul><li>Sub-merchant(하위몰) 심사 반송 사유 확인과 카드사 협의</li><li>심사 부서에 카드사 기준 가이드 제공</li></ul>
+      <a href="career.html#p1">경력기술서 2-1 →</a>
+    </div>
+    <div class="step-panel print-show" role="tabpanel" data-panel="s3" data-label="승인" hidden>
+      <h3>카드사마다 다른 인증·한도 기준을 맞추기</h3>
+      <ul><li>카드사별 인증·한도 정책 정리와 유관부서 안내</li><li>환금성 업종 결제 한도 예외 협의</li></ul>
+      <a href="career.html#p3">경력기술서 2-3 →</a>
+    </div>
+    <div class="step-panel print-show" role="tabpanel" data-panel="s4" data-label="매입" hidden>
+      <h3>승인 이후의 매입과 정산까지</h3>
+      <ul><li>매입 VAN 다중화 PM</li><li>승인 실패·정산 반송의 원인 분석</li></ul>
+      <a href="career.html#p4">경력기술서 2-4 · 2-5 →</a>
+    </div>
+    <div class="step-panel print-show" role="tabpanel" data-panel="s5" data-label="분쟁" hidden>
+      <h3>기한이 있는 분쟁을 끝까지</h3>
+      <ul><li>해외카드 차지백 주담당</li><li>접수부터 결과 기록까지 처리 순서 표준화</li></ul>
+      <a href="career.html#p6">경력기술서 2-6 →</a>
+    </div>
+    <div class="step-panel print-show" role="tabpanel" data-panel="s6" data-label="개선" hidden>
+      <h3>같은 문제가 다시 생기지 않게</h3>
+      <ul><li>반복 민원의 원인을 찾아 구조 개선</li><li>개설 서류 생성 도구 공동 개발</li></ul>
+      <a href="career.html#p7">경력기술서 2-7 · 2-8 →</a>
+    </div>
+  </section>
+
+  <section class="end">
+    <h2>국내에서 시작해 해외까지,<br>결제 운영을 더 깊게 하고 싶습니다</h2>
+    <p>국내 가맹점 운영에서 시작해 해외 가맹점과 해외카드 결제까지 다루면서, 국내외 결제를 함께 다루는 일을 더 깊게 하고 싶어졌습니다.<br>서류에 다 담지 못한 과정은 면접에서 직접 말씀드리겠습니다.</p>
+    <div class="mail-row"><code>thdms5478@naver.com</code><button type="button" data-copy="thdms5478@naver.com">이메일 복사</button></div>
+  </section>
+
+  <nav class="pager" aria-label="다음 서류"><span></span><a href="resume.html">다음 · <b>이력서</b> →</a></nav>
+</main>
+<footer class="foot">© 2026 장소은</footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
