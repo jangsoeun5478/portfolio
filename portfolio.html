@@ -49,7 +49,7 @@
         <div>
           <div class="pcase__tags"><span class="chip">결제서비스 운영 · 표준화</span></div>
           <h2>개설 단계마다 걸리는 시간을 적어 두고, 요청해야 할 시점을 정했습니다</h2>
-          <p>요청 부서가 일정을 맞출 수 있도록 단계별 소요일을 공개하고, 개설 담당자가 빠뜨리지 않도록 체크리스트를 함께 만들었습니다.</p>
+          <p>요청 부서가 일정을 맞출 수 있도록 <span class="nw">Sub-merchant(하위몰)</span> 심사까지 단계별 소요일을 공개하고, 개설 담당자가 빠뜨리지 않도록 체크리스트를 함께 만들었습니다.</p>
         </div>
       </div>
       <p class="subhead">개설 주요 단계와 소요일 <small>영업일 약 30일 전 요청 기준</small></p>
@@ -225,7 +225,7 @@
         <div>
           <div class="pcase__tags"><span class="chip">운영 이슈 대응</span></div>
           <h2>승인 실패가 생기면 증상 · 원인 · 조치 순서로 기록했습니다</h2>
-          <p>겉으로 보이는 증상은 비슷해도 원인은 결제사 설정, 한도, 단말기 상태처럼 제각각입니다.<br />원천사와 협의하며 처리한 다섯 건을 같은 틀로 정리했습니다.</p>
+          <p>겉으로 보이는 증상은 비슷해도 원인은 인증 설정, 매핑, 한도처럼 제각각입니다.<br />결제사와 협의하며 처리한 세 건을 같은 틀로 정리했습니다.</p>
         </div>
       </div>
       <div class="trace" id="traceBox">
@@ -233,8 +233,6 @@
           <button class="trace__item" role="tab" type="button" data-t="1" aria-selected="true"><small>승인 거절</small><b>오픈 전 게임 결제 테스트</b></button>
           <button class="trace__item" role="tab" type="button" data-t="2" aria-selected="false"><small>승인 실패</small><b>결제사 미매핑</b></button>
           <button class="trace__item" role="tab" type="button" data-t="3" aria-selected="false"><small>취소 반송</small><b>결제사 미수금 한도</b></button>
-          <button class="trace__item" role="tab" type="button" data-t="4" aria-selected="false"><small>승인 실패</small><b>장기 미실적 단말기</b></button>
-          <button class="trace__item" role="tab" type="button" data-t="5" aria-selected="false"><small>민원</small><b>하위몰명 불일치</b></button>
         </div>
         <div class="trace__pane" role="tabpanel" data-t="1">
           <div class="trace__step"><small>증상</small><p>오픈 전 베타 테스트에서 일부 결제사의 승인이 거절됨</p></div>
@@ -244,22 +242,12 @@
         <div class="trace__pane" role="tabpanel" data-t="2" hidden>
           <div class="trace__step"><small>증상</small><p>특정 업종 가맹점의 결제가 실패함</p></div>
           <div class="trace__step"><small>원인</small><p>결제사 쪽 매핑이 되어 있지 않았음</p></div>
-          <div class="trace__step"><small>조치</small><p>원천사에 매핑을 요청하고 결제가 정상 처리되는지 확인</p></div>
+          <div class="trace__step"><small>조치</small><p>결제사에 매핑을 요청하고 결제가 정상 처리되는지 확인</p></div>
         </div>
         <div class="trace__pane" role="tabpanel" data-t="3" hidden>
           <div class="trace__step"><small>증상</small><p>결제 취소가 반송됨</p></div>
           <div class="trace__step"><small>원인</small><p>결제사의 미수금 한도가 부족했음</p></div>
           <div class="trace__step"><small>조치</small><p>결제사의 한도 산정 기준을 확인해 내부에 공유</p></div>
-        </div>
-        <div class="trace__pane" role="tabpanel" data-t="4" hidden>
-          <div class="trace__step"><small>증상</small><p>고객의 승인 실패 문의</p></div>
-          <div class="trace__step"><small>원인</small><p>장기간 실적이 없던 단말기가 정지된 상태였음</p></div>
-          <div class="trace__step"><small>조치</small><p>단말기 정지 전에 사전 협의하는 절차를 VAN사에 제안</p></div>
-        </div>
-        <div class="trace__pane" role="tabpanel" data-t="5" hidden>
-          <div class="trace__step"><small>증상</small><p>승인할 때와 매입할 때 하위몰명이 다르다는 민원</p></div>
-          <div class="trace__step"><small>원인</small><p>같은 사업자번호에 사업자명이 중복 등록되어 있었음</p></div>
-          <div class="trace__step"><small>조치</small><p>중복 정보를 정리해 같은 민원이 다시 생기지 않게 함</p></div>
         </div>
       </div>
     </section>
@@ -289,8 +277,8 @@
 
     <section class="closing">
       <div>
-        <h2>서류로 다 담지 못한 과정은 직접 말씀드리겠습니다</h2>
-        <p>다섯 가지 사례 모두 처음에는 메일 한 통, 문의 한 건에서 시작했습니다.<br />그 한 건을 끝까지 따라가 정리하는 일을 계속 하고 싶습니다.<br />기회를 주시면 감사하겠습니다.</p>
+        <h2>사례마다 만든 문서와 도구가 지금도 쓰이고 있습니다</h2>
+        <p>다섯 가지 사례 모두 처음에는 메일 한 통, 문의 한 건에서 시작했습니다.<br />그 한 건을 끝까지 따라가 정리하는 방식으로 일해 왔습니다.</p>
       </div>
       <div class="closing__mail">
         <code>thdms5478@naver.com</code>

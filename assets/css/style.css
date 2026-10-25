@@ -645,3 +645,37 @@ h1, h2, h3, h4 { font-family: var(--f-display); text-wrap: balance; letter-spaci
 .flow3 a { font-size: 13.5px; font-weight: 700; color: var(--accent); text-decoration: none; margin-top: 2px; }
 .flow3.is-base { background: var(--paper); }
 @media (max-width: 860px) { .flows { grid-template-columns: 1fr; } }
+
+/* 경력 요약 8칸 (4열) */
+.sumgrid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.sumgrid--4 > a { border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.sumgrid--4 > a:nth-child(3n) { border-right: 1px solid var(--line); }
+.sumgrid--4 > a:nth-child(4n) { border-right: 0; }
+.sumgrid--4 > a:nth-last-child(-n+3) { border-bottom: 1px solid var(--line); }
+.sumgrid--4 > a:nth-last-child(-n+4) { border-bottom: 0; }
+@media (max-width: 960px) {
+  .sumgrid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sumgrid--4 > a:nth-child(4n) { border-right: 1px solid var(--line); }
+  .sumgrid--4 > a:nth-child(2n) { border-right: 0; }
+  .sumgrid--4 > a:nth-last-child(-n+4) { border-bottom: 1px solid var(--line); }
+  .sumgrid--4 > a:nth-last-child(-n+2) { border-bottom: 0; }
+}
+@media (max-width: 560px) {
+  .sumgrid--4 { grid-template-columns: 1fr; }
+  .sumgrid--4 > a { border-right: 0 !important; border-bottom: 1px solid var(--line) !important; }
+  .sumgrid--4 > a:last-child { border-bottom: 0 !important; }
+}
+
+/* 줄바꿈 · 글꼴 다듬기 */
+.nw { white-space: nowrap; }
+.steps span, .rv__job span, .rv__line time, .job time { font-family: var(--f-display); font-variant-numeric: tabular-nums; }
+.doc__row output { font-family: var(--f-body); }
+/* 포트폴리오 목록 5칸 */
+.pfnav { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.pfnav a { border-bottom: 0 !important; border-right: 1px solid var(--line) !important; }
+.pfnav a:last-child { border-right: 0 !important; }
+@media (max-width: 1000px) {
+  .pfnav { grid-template-columns: 1fr; }
+  .pfnav a { border-right: 0 !important; border-bottom: 1px solid var(--line) !important; }
+  .pfnav a:last-child { border-bottom: 0 !important; }
+}
