@@ -2,75 +2,79 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>장소은 | 이력서</title>
-  <meta name="description" content="온라인 결제서비스 운영 담당자 지원 · 장소은 이력서" />
-  <meta name="theme-color" content="#3b5bdb" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%233b5bdb'/><text x='32' y='44' font-size='32' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>" />
+  <meta name="description" content="결제 운영 담당자 지원 · 장소은 이력서" />
+  <meta name="theme-color" content="#0c6b63" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230c6b63'/><text x='32' y='43' font-size='30' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@500;600;700&display=swap" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
   <header class="nav">
-    <a class="nav__brand" href="index.html">장소은<span>.</span></a>
-    <nav class="nav__links" aria-label="페이지">
-      <a href="index.html">홈</a>
-      <a href="resume.html" aria-current="page">이력서</a>
-      <a href="career.html">경력기술서</a>
-      <a href="portfolio.html">포트폴리오</a>
-    </nav>
-    <button class="nav__print" type="button" id="printBtn">PDF 저장</button>
+    <div class="wrap nav__in">
+      <a class="nav__brand" href="index.html">장소은 <small>결제 운영</small></a>
+      <nav class="nav__links" aria-label="페이지">
+        <a href="index.html">홈</a>
+        <a href="resume.html" aria-current="page">이력서</a>
+        <a href="career.html">경력기술서</a>
+        <a href="portfolio.html">포트폴리오</a>
+      </nav>
+      <button class="nav__print" type="button" id="printBtn">PDF 저장</button>
+    </div>
   </header>
 
-  <main class="wrap--narrow">
-    <div class="doc-hero no-print">
-      <p class="eyebrow">지원 서류 01</p>
-      <h1>이력서</h1>
+  <main class="wrap wrap--narrow">
+    <div class="dochead no-print">
+      <p class="label">지원 서류 01</p>
+      <h1 class="h2">이력서</h1>
     </div>
 
-    <article class="paper reveal">
+    <article class="paper">
       <header class="r-head">
-        <img src="assets/img/profile.webp" alt="장소은 프로필 사진" width="96" height="96" />
+        <img src="assets/img/profile.webp" alt="장소은 프로필 사진" width="84" height="84" />
         <div>
-          <h2>장소은<span>온라인 결제서비스 운영 · PG 결제인프라</span></h2>
-          <div class="r-head__meta">
-            <span><b>Email</b> thdms5478@naver.com</span>
-          </div>
+          <h1>장소은</h1>
+          <p>결제 운영 · PG 결제인프라</p>
+          <code>thdms5478@naver.com</code>
         </div>
       </header>
 
       <div class="r-sum">
-        <div><strong>전 매입사</strong><span>해외법인사업자 공용 가맹점번호 개설</span></div>
-        <div><strong>약 30건</strong><span>해외카드 차지백 소명 (주담당)</span></div>
-        <div><strong>월 약 8,000억 원</strong><span>매입 VAN 다중화 PM</span></div>
-        <div><strong>서류 자동화</strong><span>건당 약 30분 → 10초 내외 (공동 개발)</span></div>
+        <div><strong>약 30건</strong><span>해외카드 차지백 소명 · 주담당</span></div>
+        <div><strong>167건</strong><span>VAN ID 신규 채번 요청</span></div>
+        <div><strong>월 약 8,000억 원</strong><span>매입 VAN 다중화 · PM</span></div>
+        <div><strong>721건</strong><span>차액정산 반송 재매입</span></div>
       </div>
 
-      <section class="r-sec r-sec--full">
-        <h3>소개</h3>
-        <p class="r-intro">
-          네이버파이낸셜주식회사 결제인프라에서 PG 카드 결제 운영을 맡고 있습니다.<br />
-          해외사업자를 포함한 가맹점의 개설과 매입사 세팅, 하위몰 심사 반송, 차지백, 정산 반송을 처리해 왔습니다.<br />
-          반복되는 일은 가이드와 자동화 도구로 표준화하고, 문제는 데이터와 로그로 먼저 찾습니다.
-        </p>
+      <section class="r-sec">
+        <h2>소개</h2>
+        <ul class="r-list">
+          <li>PG 카드 결제의 개설, 심사, 결제사 협의, 차지백, 정산 반송을 맡고 있습니다.</li>
+          <li>업무는 공문 · 현황표 · 체크리스트로 남겨 담당자가 바뀌어도 같은 절차로 이어지게 합니다.</li>
+          <li>반복되는 민원과 반송은 원인이 된 구조까지 찾아 고칩니다.</li>
+        </ul>
       </section>
 
       <section class="r-sec">
-        <h3>경력</h3>
+        <h2>경력</h2>
         <div>
           <div class="r-job">
             <div class="r-job__top"><b>네이버파이낸셜주식회사</b><span>2024.11 – 재직 중</span></div>
-            <p class="r-job__role">결제인프라 · PG 카드 결제 운영 (매입사 · VAN사 · 유관부서)</p>
+            <p class="r-job__role">결제인프라 · PG 카드 결제 운영</p>
             <ul class="r-list">
-              <li><b>해외사업자 연동</b> · 글로벌 앱마켓 2곳 가맹점 연동, 해외 앱스토어 소득공제 기준 소명</li>
-              <li><b>가맹점 개설 · 세팅</b> · 가맹점번호 · VAN ID(167건) · 단말기 ID 채번과 내부 세팅</li>
-              <li><b>하위몰 심사</b> · 심사 반송 사유 확인과 예외 심사 협의, 매입사 정기 점검 회신</li>
+              <li><b>청약 · 운영</b> · 가맹점번호 · VAN ID · 단말기 ID 채번과 내부 세팅, 부분취소 특약 반영</li>
+              <li><b>가맹점 심사</b> · 하위몰 심사 반송 대응과 예외 심사 협의, 결제사 정기 점검 회신</li>
+              <li><b>결제사 협의</b> · 개설 · 특약 · 한도 · 인증 관련 결제사 공문 500건 이상</li>
+              <li><b>정책 관리</b> · 결제사별 인증 · 한도 · 노출 정책 정리, 한도 소진율 관리</li>
               <li><b>차지백 · 분쟁</b> · 해외카드 결제 서비스 차지백 주담당, 이의신청 SOP 작성</li>
-              <li><b>매입 · 정산</b> · 차액정산 반송 721건 재매입, 승인 · 매입 VAN 파일 대사</li>
-              <li><b>정책 · 한도</b> · 매입사별 인증 · 한도 · 노출 정책 정리, 게임 결제 일 한도 예외 승인 협의</li>
-              <li><b>표준화</b> · 가맹점 개설 요청 · 테스트카드 요청 가이드, 채번 체크리스트, 인수인계 문서</li>
-              <li><b>자동화</b> · 가맹점 개설 서류 생성 도구 공동 개발</li>
+              <li><b>이슈 대응</b> · 승인 · 취소 실패 원인 규명, 승인 · 매입 VAN 파일 대사</li>
+              <li><b>운영 개선</b> · 개설 요청 Jira 일원화, 채번 체크리스트, 개설 서류 생성 도구 공동 개발</li>
+              <li><b>해외사업자</b> · 해외법인사업자 공용 가맹점번호 개설, 글로벌 앱마켓 2곳 연동 지원</li>
             </ul>
           </div>
           <div class="r-job">
@@ -84,30 +88,28 @@
       </section>
 
       <section class="r-sec">
-        <h3>학력</h3>
+        <h2>학력</h2>
         <div class="r-job">
           <div class="r-job__top"><b>동원대학교 경찰행정과</b><span>2019.03 – 2021.02</span></div>
-          <p class="r-job__role" style="margin:0">졸업</p>
+          <p class="r-job__role">졸업</p>
         </div>
       </section>
 
       <section class="r-sec">
-        <h3>보유 기술</h3>
-        <dl class="r-skills">
-          <dt>업무 · 데이터</dt><dd><span class="chip">Jira · OSS</span><span class="chip">SQL</span><span class="chip">Excel · Word (상)</span><span class="chip">Slack</span></dd>
-          <dt>AI</dt><dd><span class="chip">Claude Code</span><span class="chip">VS Code</span><span class="chip">바이브코딩</span><span class="chip">AI 에이전트</span></dd>
-          <dt>협업</dt><dd><span class="chip">Figma</span><span class="chip">Notion</span><span class="chip">Confluence</span></dd>
-        </dl>
+        <h2>보유 기술</h2>
+        <div class="skills">
+          <span class="chip chip--plain">Jira · OSS</span><span class="chip chip--plain">SQL</span><span class="chip chip--plain">Excel · Word</span><span class="chip chip--plain">Confluence</span><span class="chip chip--plain">Slack</span><span class="chip chip--plain">Claude Code · VS Code</span><span class="chip chip--plain">Figma · Notion</span>
+        </div>
       </section>
     </article>
 
-    <nav class="pager no-print" aria-label="문서 이동">
+    <nav class="pager" aria-label="문서 이동">
       <a href="index.html"><small>← 이전</small><b>홈</b></a>
       <a href="career.html"><small>다음 →</small><b>경력기술서</b></a>
     </nav>
   </main>
 
-  <footer class="footer">© 2026 장소은</footer>
+  <footer class="footer"><div class="wrap">© 2026 장소은</div></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="assets/js/main.js"></script>
 </body>

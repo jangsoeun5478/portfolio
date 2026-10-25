@@ -2,434 +2,248 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>장소은 | 경력기술서</title>
-  <meta name="description" content="장소은 경력기술서: 해외사업자 연동, 가맹점 개설·세팅, 하위몰 심사, 차지백·분쟁, 매입·정산, 표준화·자동화" />
-  <meta name="theme-color" content="#3b5bdb" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%233b5bdb'/><text x='32' y='44' font-size='32' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>" />
+  <meta name="description" content="장소은 경력기술서: 결제서비스 청약·운영, 가맹점 심사, 결제사 협의·정책, 차지백, 운영 이슈 대응, 운영 개선" />
+  <meta name="theme-color" content="#0c6b63" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230c6b63'/><text x='32' y='43' font-size='30' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@500;600;700&display=swap" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
   <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
   <header class="nav">
-    <a class="nav__brand" href="index.html">장소은<span>.</span></a>
-    <nav class="nav__links" aria-label="페이지">
-      <a href="index.html">홈</a>
-      <a href="resume.html">이력서</a>
-      <a href="career.html" aria-current="page">경력기술서</a>
-      <a href="portfolio.html">포트폴리오</a>
-    </nav>
-    <button class="nav__print" type="button" id="printBtn">PDF 저장</button>
+    <div class="wrap nav__in">
+      <a class="nav__brand" href="index.html">장소은 <small>결제 운영</small></a>
+      <nav class="nav__links" aria-label="페이지">
+        <a href="index.html">홈</a>
+        <a href="resume.html">이력서</a>
+        <a href="career.html" aria-current="page">경력기술서</a>
+        <a href="portfolio.html">포트폴리오</a>
+      </nav>
+      <button class="nav__print" type="button" id="printBtn">PDF 저장</button>
+    </div>
   </header>
 
-  <main class="wrap--narrow">
-    <div class="doc-hero">
-      <p class="eyebrow">지원 서류 02</p>
-      <h1>경력기술서</h1>
-      <p>업무 영역마다 무엇을, 어떻게 했는지 정리했습니다.</p>
+  <main class="wrap">
+    <div class="dochead">
+      <p class="label">지원 서류 02</p>
+      <h1 class="h1">경력기술서</h1>
+      <p class="lead">결제 운영 업무를 일곱 영역으로 나누어, 무엇을 어떻게 했는지 적었습니다.</p>
       <nav class="toc no-print" aria-label="목차">
-        <a href="#history">1. 경력사항</a>
-        <a href="#projects">2. 주요 경력기술서</a>
-        <a href="#etc">3. 기타 경력기술서</a>
-        <a href="#skills">4. 보유 역량</a>
-        <a href="#prev">5. 이전 경력</a>
+        <a href="#history">경력사항</a>
+        <a href="#ops">결제 운영 상세</a>
+        <a href="#projects">주요 프로젝트</a>
+        <a href="#etc">기타</a>
+        <a href="#skills">보유 역량</a>
+        <a href="#prev">이전 경력</a>
       </nav>
     </div>
 
-    <!-- 1. 경력사항 -->
-    <section class="c-block" id="history">
-      <div class="c-block__title"><span>01</span><h2>경력사항</h2></div>
-      <article class="paper reveal">
-        <div class="c-company">
-          <div><h3>네이버파이낸셜주식회사</h3><p>결제인프라 · PG 카드 결제 운영</p></div>
-          <p><b>2024.11 – 재직 중</b></p>
-        </div>
-
-        <div class="area">
-          <div class="area__name"><span class="n">1</span>가맹점 개설 · 세팅<small>Merchant Service</small></div>
-          <ul class="tree">
-            <li><b>개설 전 과정 담당</b>
-              <ol class="steps6" aria-label="가맹점 개설 단계">
-                <li>가맹점번호 채번</li><li>VAN ID 채번</li><li>내부 세팅</li><li>하위몰 심사</li><li>QA</li><li>실매출 확인</li>
-              </ol>
-              <ul>
-                <li>VAN ID 신규 채번 요청 167건, 단말기 ID 채번 약 20건</li>
-                <li>신규 가맹점번호 부분취소 특약 반영</li>
-                <li>월 1회 카드 BIN 정보를 운영계 · 개발계에 반영 (19개월)</li>
-              </ul>
-            </li>
-            <li><b>해외사업자 연동</b>
-              <ul>
-                <li>해외법인 · 해외 PSP · 글로벌 앱마켓 가맹점 연동 (<a href="#p1">2-1</a>)</li>
-                <li>해외카드 매출 연동 절차를 단계별 체크포인트와 함께 문서화</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="area">
-          <div class="area__name"><span class="n">2</span>하위몰 심사 · 매입사 점검<small>Payment Operations</small></div>
-          <ul class="tree">
-            <li><b>심사 반송 대응</b>
-              <ul>
-                <li>반송 사유를 확인하고 예외 심사 공문으로 심사 재진행</li>
-                <li>업종 기준을 확인해 전용 가맹점번호 필요 여부 판단</li>
-              </ul>
-            </li>
-            <li><b>매입사 정기 점검 · 규제 대응</b>
-              <ul>
-                <li>하위몰 자체점검 · 환금성 서브몰 점검 · 전수조사 회신 (연 10회 이상)</li>
-                <li>사고 하위몰 모니터링 결과 회신</li>
-                <li>법 개정에 따른 입점 기준 회신</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="area">
-          <div class="area__name"><span class="n">3</span>차지백 · 분쟁 · 민원</div>
-          <ul class="tree">
-            <li><b>해외카드 차지백</b>
-              <ul>
-                <li>해외카드 결제 서비스 차지백 주담당 (<a href="#p3">2-3</a>)</li>
-                <li>해외결제 이의신청 고객 문의 티켓 서브 담당 (27건 이상)</li>
-              </ul>
-            </li>
-            <li><b>민원 · 중재</b>
-              <ul>
-                <li>감독기관 · 매입사 민원 회신</li>
-                <li>매출 취소 중재 공문 접수 창구 수립</li>
-                <li>혜택 미적용 민원을 전용 가맹점번호 매출 분기로 해결 (<a href="#p7">2-7</a>)</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="area">
-          <div class="area__name"><span class="n">4</span>매입 · 정산 · 대사<small>VAN 연동 · 차액정산</small></div>
-          <ul class="tree">
-            <li><b>매입</b>
-              <ul>
-                <li>매입 VAN 다중화 PM (<a href="#p2">2-2</a>)</li>
-                <li>승인 VAN ↔ 매입 VAN 파일 대사 기준과 불일치 유형별 조치표 작성</li>
-              </ul>
-            </li>
-            <li><b>정산</b>
-              <ul>
-                <li>차액정산 반송 건 재매입과 반송 원인 정리 (<a href="#p6">2-6</a>)</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="area">
-          <div class="area__name"><span class="n">5</span>매입사 정책 · 한도</div>
-          <ul class="tree">
-            <li><b>정책 관리</b>
-              <ul>
-                <li>매입사별 인증 · 한도 · 업종 정책을 표로 정리해 유관부서 안내</li>
-                <li>매입사 앱 · SMS 상호명 노출 정책 정리</li>
-                <li>게임 가맹점 결제 한도 협의 (<a href="#p5">2-5</a>)</li>
-              </ul>
-            </li>
-            <li><b>한도 관리</b>
-              <ul>
-                <li>PG 승인 · 매입한도 소진율 모니터링</li>
-                <li>한도 초과 전 증액 · 이관 협의</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="area">
-          <div class="area__name"><span class="n">6</span>표준화 · 자동화</div>
-          <ul class="tree">
-            <li><b>가이드 · SOP</b>
-              <ul>
-                <li>가맹점 개설 요청 · 테스트카드 요청 가이드, 채번 자가 체크리스트 (<a href="#p4">2-4</a>)</li>
-                <li>업무 18개 항목을 주기 · 가이드 링크 · 담당자로 정리한 인수인계 문서</li>
-              </ul>
-            </li>
-            <li><b>자동화</b>
-              <ul>
-                <li>가맹점 개설 서류 생성 도구 공동 개발 (<a href="#p8">2-8</a>)</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-    <!-- 2. 주요 경력기술서 -->
-    <section class="c-block" id="projects">
-      <div class="c-block__title"><span>02</span><h2>주요 경력기술서</h2></div>
-      <article class="paper reveal">
-
-        <div class="proj" id="p1">
-          <div class="proj__head">
-            <span class="proj__no">2-1</span>
-            <div>
-              <h3>해외사업자 가맹점 연동</h3>
-              <div class="proj__tags"><span class="chip chip--accent">해외 가맹점 온보딩</span><span class="chip">매입사 심사 협의</span><span class="chip">세무 · 분쟁 기준</span><span class="chip">2025 – 2026</span></div>
-            </div>
-          </div>
-          <div class="bra">
-            <div><b>배경</b><ul>
-              <li>해외법인 · 해외 PSP · 글로벌 앱마켓은 국내 사업자와 심사 기준 · 업종 · 세무 처리가 다름</li>
-              <li>매입사마다 개설 가능 여부와 요구 서류가 다름</li>
-            </ul></div>
-            <div><b>역할 및 수행</b><ul>
-              <li>해외법인사업자 공용 가맹점번호(일반 · 소득공제 제외 · 게임 용도)를 전 매입사와 협의해 개설</li>
-              <li>범용 개설이 안 되는 매입사는 업종을 전환해 개설</li>
-              <li>비정상거래 · 민원 책임 확약을 요구한 매입사에는 공문으로 대응</li>
-              <li>글로벌 앱마켓 2곳의 전용 가맹점 개설 검토와 VAN ID 채번</li>
-              <li>매입사의 매출 취소 중재 공문 접수 창구 수립</li>
-              <li>해외 앱스토어 매출의 소득공제 제외 기준을 국세청 해외사업자 가이드 근거로 매입사에 소명</li>
-              <li>대형 게임사 해외 자회사의 전용 가맹점번호 채번</li>
-            </ul></div>
-            <div class="is-result"><b>성과 및 회고</b><ul>
-              <li>해외 PSP · 해외사업자 가맹점이 국내 카드 결제를 받을 수 있는 공용 가맹점 체계 마련</li>
-              <li>세무 기준과 취소 중재 창구까지 함께 정해 두어야 연동이 마무리된다는 것을 배움</li>
-            </ul><a class="see" href="portfolio.html#global">포트폴리오에서 과정 보기 →</a></div>
-          </div>
-        </div>
-
-        <div class="proj" id="p2">
-          <div class="proj__head">
-            <span class="proj__no">2-2</span>
-            <div>
-              <h3>매입 VAN 다중화 · PM</h3>
-              <div class="proj__tags"><span class="chip chip--accent">PM · 기여도 80%</span><span class="chip">오픈 전 테스트</span><span class="chip">매입사 · VAN사 협의</span><span class="chip">2026.07 – 10</span></div>
-            </div>
-          </div>
-          <div class="bra">
-            <div><b>배경</b><ul>
-              <li>매입을 안정적으로 진행하기 위해 매입 VAN을 다중화한 프로젝트</li>
-            </ul></div>
-            <div><b>역할 및 수행</b><ul>
-              <li>킥오프부터 운영 전환까지 매입사 · VAN사 · 사내 개발의 범위와 일정 총괄</li>
-              <li>QA 시나리오 직접 설계 (기본 · 엣지 · 호환 케이스, 베타 사업자 등급 5종)</li>
-              <li>매입사 개발계 구간 테스트 환경을 매입사와 직접 협의해 마련</li>
-              <li>매입결과파일에 건별 기본 · 제휴 수수료 항목 추가, 전 VAN사 반영일을 하루로 통일</li>
-            </ul></div>
-            <div class="is-result"><b>성과 및 회고</b><ul>
-              <li>월 약 8,000억 원 규모 매입을 중단 없이 다중화 구조로 전환</li>
-              <li>테스트 중 결과파일 수수료 합계 누락을 찾아 VAN사 로직 보정</li>
-              <li>건별 수수료 수신으로 월간 정산 대사 리소스 절감 기반 마련</li>
-            </ul><a class="see" href="portfolio.html#van">포트폴리오에서 과정 보기 →</a></div>
-          </div>
-        </div>
-
-        <div class="proj" id="p3">
-          <div class="proj__head">
-            <span class="proj__no">2-3</span>
-            <div>
-              <h3>해외카드 차지백 주담당 · 이의신청 SOP</h3>
-              <div class="proj__tags"><span class="chip chip--accent">차지백 · 분쟁</span><span class="chip">SOP</span><span class="chip">2025.08 – 2026.06</span></div>
-            </div>
-          </div>
-          <div class="bra">
-            <div><b>배경</b><ul>
-              <li>해외카드 결제 서비스에서 해외카드 차지백이 매입사 공문으로 접수</li>
-              <li>정해진 기한 안에 소명하지 못하면 매입대금이 차감되는 구조</li>
-            </ul></div>
-            <div><b>역할 및 수행</b><ul>
-              <li>주담당으로 16차수 약 30건 처리</li>
-              <li>접수 당일~익일 서비스팀에 공유하고 증빙 기한 안내 · 리마인드, 기한 내 소명 회신</li>
-              <li>이중청구 주장 건은 서로 다른 두 예약임을 사실관계로 확인해 소명</li>
-              <li>패소 건은 사유를 분석하고 차감 예정일을 내부에 공유</li>
-              <li>접수부터 결과 기록까지의 흐름을 SOP로 작성해 인계</li>
-            </ul></div>
-            <div class="is-result"><b>성과 및 회고</b><ul>
-              <li>소명 기한을 놓치지 않는 처리 흐름을 정착시키고 후임이 같은 절차로 이어받도록 문서화</li>
-              <li>차지백을 줄이려면 가맹점의 취소 처리와 고객 안내까지 함께 봐야 한다는 것을 배움</li>
-            </ul><a class="see" href="portfolio.html#cb">포트폴리오에서 흐름 보기 →</a></div>
-          </div>
-        </div>
-
-        <div class="proj" id="p4">
-          <div class="proj__head">
-            <span class="proj__no">2-4</span>
-            <div>
-              <h3>가맹점 개설 프로세스 표준화</h3>
-              <div class="proj__tags"><span class="chip chip--accent">플레이북</span><span class="chip">결제 환경 표준화</span><span class="chip">2026.08</span></div>
-            </div>
-          </div>
-          <div class="bra">
-            <div><b>배경</b><ul>
-              <li>개설 요청이 메일로 들어와 부서 간 이력이 끊기고 확인이 지연</li>
-              <li>요청 부서가 개설 소요기간을 몰라 오픈 일정이 촉박해지는 일이 반복</li>
-            </ul></div>
-            <div><b>역할 및 수행</b><ul>
-              <li>개설 요청을 Jira 템플릿으로 일원화하고 개설 요청서 양식 정비 (v3)</li>
-              <li>개설부터 실연동까지 9단계와 단계별 소요일 정의</li>
-              <li>요청 리드타임 기준 수립 (영업일 약 30일 전)</li>
-              <li>테스트카드 요청도 같은 방식으로 표준화</li>
-              <li>채번 자가 체크리스트 작성 (공통 · 매입사별 · 개설 후 체크, 하위몰 예외 심사 방법)</li>
-            </ul></div>
-            <div class="is-result"><b>성과 및 회고</b><ul>
-              <li>요청 부서가 같은 양식 · 같은 경로로 요청하고 진행 상황을 직접 확인</li>
-              <li>담당자에 따라 달라지던 개설 품질을 체크리스트로 맞춤</li>
-            </ul><a class="see" href="portfolio.html#std">포트폴리오에서 과정 보기 →</a></div>
-          </div>
-        </div>
-
-        <div class="proj" id="p5">
-          <div class="proj__head">
-            <span class="proj__no">2-5</span>
-            <div>
-              <h3>게임 가맹점 인증 · 한도 협의</h3>
-              <div class="proj__tags"><span class="chip chip--accent">매입사 협의</span><span class="chip">데이터 기반 조건 제안</span><span class="chip">오픈 전 테스트</span></div>
-            </div>
-          </div>
-          <div class="bra">
-            <div><b>배경</b><ul>
-              <li>게임 같은 환금성 업종은 매입사가 부정거래 · 민원 리스크로 까다롭게 보는 영역</li>
-              <li>매입사마다 인증 기준과 한도 조건이 다름</li>
-            </ul></div>
-            <div><b>역할 및 수행</b><ul>
-              <li>대형 게임사 결제 오픈 7일 전 베타 테스트에서 일부 매입사의 2차 인증 미적용 발견</li>
-              <li>매입사와 내부 로직을 함께 점검해 오픈 일정 안에 해소</li>
-              <li>기본 한도만 가능하다는 회신에 매출 규모 · 인증 흐름 · FDS 운영 자료로 다시 협의</li>
-            </ul></div>
-            <div class="is-result"><b>성과 및 회고</b><ul>
-              <li>게임 결제 일 한도 50만 원 → 1,000만 원 예외 승인</li>
-              <li>오픈 일정 그대로 대형 게임사 결제 오픈</li>
-            </ul><a class="see" href="portfolio.html#limit">포트폴리오에서 과정 보기 →</a></div>
-          </div>
-        </div>
-
-        <div class="proj" id="p6">
-          <div class="proj__head">
-            <span class="proj__no">2-6</span>
-            <div>
-              <h3>차액정산 반송 데이터 정비</h3>
-              <div class="proj__tags"><span class="chip chip--accent">운영 데이터</span><span class="chip">매입사 협의</span><span class="chip">2025</span></div>
-            </div>
-          </div>
-          <div class="bra">
-            <div><b>배경</b><ul>
-              <li>영세 · 중소 가맹점 우대 수수료를 돌려받는 차액정산에서 반송 건이 쌓여 있었음</li>
-            </ul></div>
-            <div><b>역할 및 수행</b><ul>
-              <li>2019년부터 누적된 반송 내역을 사업자별 건수로 추출 · 취합</li>
-              <li>원매입일 30일 경과로 반송된 721건을 강제접수(재매입)로 처리</li>
-              <li>처음 해 보는 절차라 매입사 공문 요건부터 확인</li>
-              <li>반송률 과다 원인이 전용 가맹점 미설정임을 데이터로 찾아 전용 가맹점번호 채번</li>
-            </ul></div>
-            <div class="is-result"><b>성과 및 회고</b><ul>
-              <li>반송 건 재매입을 마치고 같은 원인의 반송이 다시 쌓이지 않도록 구조 정리</li>
-              <li>개발 요청 없이 데이터를 직접 확인해 빠르게 대응</li>
-            </ul></div>
-          </div>
-        </div>
-
-        <div class="proj" id="p7">
-          <div class="proj__head">
-            <span class="proj__no">2-7</span>
-            <div>
-              <h3>VOC에서 시작한 운영 개선</h3>
-              <div class="proj__tags"><span class="chip chip--accent">VOC → 프로세스</span><span class="chip">재발 방지</span></div>
-            </div>
-          </div>
-          <div class="bra">
-            <div><b>배경</b><ul>
-              <li>“카드 혜택이 안 들어왔다”, “승인과 매입의 상호가 다르다” 같은 민원이 매입사를 통해 반복 접수</li>
-            </ul></div>
-            <div><b>역할 및 수행</b><ul>
-              <li>혜택 미적용 민원은 가맹점번호 미분리가 원인이라 전용 가맹점번호로 매출 분기, 요청은 트래커로 관리</li>
-              <li>하위몰명 불일치 민원은 같은 사업자번호에 사업자명이 중복 등록된 것을 찾아 정리</li>
-              <li>승인 실패 문의를 계기로 장기 미실적 단말기 정지 전 사전 협의 절차를 VAN사에 제안</li>
-            </ul></div>
-            <div class="is-result"><b>성과 및 회고</b><ul>
-              <li>같은 민원이 다시 생기지 않도록 원인이 된 구조를 바꿈</li>
-            </ul></div>
-          </div>
-        </div>
-
-        <div class="proj" id="p8">
-          <div class="proj__head">
-            <span class="proj__no">2-8</span>
-            <div>
-              <h3>가맹점 개설 서류 생성 자동화 (공동 개발)</h3>
-              <div class="proj__tags"><span class="chip chip--accent">AI · 자동화</span><span class="chip">바이브코딩</span><span class="chip">2026</span></div>
-            </div>
-          </div>
-          <div class="bra">
-            <div><b>배경</b><ul>
-              <li>매입사마다 다른 양식의 개설 서류를 매번 수기로 작성</li>
-              <li>오타 하나로 개설이 반려되기도 함</li>
-            </ul></div>
-            <div><b>역할 및 수행</b><ul>
-              <li>동료와 함께 기획 · 개발, 공통 정보 1회 입력으로 여러 양식 자동 생성</li>
-              <li>파일명 자동 부여, PDF 비밀번호, 실행 비밀번호 5회 제한, 사용 기한, 신규 양식 추가</li>
-              <li>Figma로 사용 매뉴얼 작성</li>
-            </ul></div>
-            <div class="is-result"><b>성과 및 회고</b><ul>
-              <li>서류 작성 시간 건당 약 30분 → 10초 내외</li>
-              <li>팀 공용 도구로 사용</li>
-            </ul><a class="see" href="portfolio.html#ai">포트폴리오에서 직접 체험하기 →</a></div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <!-- 3. 기타 -->
-    <section class="c-block" id="etc">
-      <div class="c-block__title"><span>03</span><h2>기타 경력기술서</h2></div>
-      <article class="paper reveal">
-        <ul class="r-list">
-          <li><b>결제 · 취소 실패 대응</b> · 실패 응답코드와 로그로 원인 규명 약 16건 (환금성 FLAG · 2차 인증 누락, 매입사 미매핑, 한도 초과 등)</li>
-          <li><b>신규 결제수단 · 서비스 지원</b> · 선불 결제수단 문화비 소득공제 가맹점 등록, 정부 바우처 전용 가맹점번호 채번</li>
-          <li><b>세무 · 규제</b> · 문화비 소득공제 · 소득공제 제외 가맹점 관리</li>
-          <li><b>가맹점 문의</b> · 매입사 앱 간판명 오노출 원인(가맹점번호 오세팅)을 파악해 재채번</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- 4. 보유 역량 -->
-    <section class="c-block" id="skills">
-      <div class="c-block__title"><span>04</span><h2>보유 역량</h2></div>
-      <div class="reveal">
-        <table class="skilltbl">
-          <thead><tr><th>기술 · 도구</th><th>실제 활용 사례</th></tr></thead>
-          <tbody>
-            <tr><th>Jira · OSS</th><td>개설 · 테스트카드 요청 접수 일원화, 매입 VAN 다중화 개발 요건 관리</td></tr>
-            <tr><th>SQL</th><td>차액정산 반송 · 거래 데이터 추출, 문법은 AI 활용</td></tr>
-            <tr><th>Excel · Word (상)</th><td>차지백 현황표, 매입사 정책 정리표, 대사 자료, 공문 작성</td></tr>
-            <tr><th>Confluence</th><td>개설 가이드 · 체크리스트 · SOP · 인수인계 문서 작성</td></tr>
-            <tr><th>Claude Code + VS Code</th><td>업무 자동화 도구 제작, AI 에이전트로 업무 이력 정리, 본 사이트 제작</td></tr>
-            <tr><th>Figma · Notion · Slack</th><td>도구 매뉴얼 작성, 외부사 협업</td></tr>
-          </tbody>
-        </table>
+    <section class="block" id="history">
+      <div class="block__title"><span class="mono">01</span><h2 class="h2">경력사항</h2></div>
+      <div class="job">
+        <time>2024.11 – 재직 중</time>
+        <div><h3>네이버파이낸셜주식회사 · 결제인프라</h3><p>PG 카드 결제 운영. 가맹점 개설 · 심사, 결제사 · VAN사 협의, 결제사 정책, 차지백, 정산 반송</p></div>
+      </div>
+      <div class="job">
+        <time>2022.06 – 2024.03</time>
+        <div><h3>에이치에스효성더클래스 · 벤츠 죽전서비스센터</h3><p>SA (Service Advisor). 고객 응대와 예약 관리</p></div>
       </div>
     </section>
 
-    <!-- 5. 이전 경력 -->
-    <section class="c-block" id="prev">
-      <div class="c-block__title"><span>05</span><h2>이전 경력</h2></div>
-      <article class="paper reveal">
-        <div class="c-company" style="border-bottom-width:1px">
-          <div><h3>에이치에스효성더클래스 · 벤츠 죽전서비스센터</h3><p>SA (Service Advisor)</p></div>
-          <p><b>2022.06 – 2024.03</b></p>
+    <section class="block" id="ops">
+      <div class="block__title"><span class="mono">02</span><h2 class="h2">결제 운영 상세</h2></div>
+
+      <div class="area" id="a1">
+        <div class="area__name"><span class="mono">운영 영역 01</span><h3>결제서비스 청약 · 운영</h3><p>가맹점이 결제를 시작하기까지</p></div>
+        <div class="area__body">
+          <p>신규 가맹점이 들어오면 결제사 가맹점번호를 채번하고, VAN ID와 단말기 ID를 받아 내부 시스템에 세팅합니다. QA를 거쳐 실매출이 발생하는 것까지 확인합니다.</p>
+          <div class="tblwrap"><table class="rec">
+            <tr><th>채번 · 세팅</th><td>VAN ID 신규 채번 요청 <span class="mono">167건</span>, 단말기 ID 채번 <span class="mono">약 20건</span> (2024.11 – 2026.09)</td></tr>
+            <tr><th>특약</th><td>신규 가맹점번호의 부분취소 특약 반영 요청</td></tr>
+            <tr><th>BIN 정보</th><td>VAN사가 보내는 카드 BIN 정보를 월 1회 운영계 · 개발계에 반영 (<span class="mono">19개월</span>)</td></tr>
+            <tr><th>해외카드</th><td>해외카드 매출 연동 절차를 문서화 (채번 → VAN ID → 내부 매핑 → 한도)</td></tr>
+          </table></div>
         </div>
-        <ul class="r-list">
-          <li>차량 정기점검 · 경고등 관련 예약 안내 및 고객 응대(CS)</li>
-          <li>지점 예약 KPI 관리</li>
-          <li>신차 리콜 대상 확인</li>
-        </ul>
-        <p class="retro"><b>현 업무와의 연결</b>고객을 직접 응대하며 익힌 관점을 가맹점 문의 · 민원 대응과 차지백 소명에 씁니다</p>
+      </div>
+
+      <div class="area" id="a2">
+        <div class="area__name"><span class="mono">운영 영역 02</span><h3>가맹점 심사</h3><p>반송 · 예외 · 점검</p></div>
+        <div class="area__body">
+          <p>일상적인 하위몰 심사 요청은 운영 대행 쪽에서 접수하고, 저는 반송 사유 확인, 예외 심사 협의, 업종 판단처럼 판단이 필요한 건을 맡습니다.</p>
+          <div class="tblwrap"><table class="rec">
+            <tr><th>반송 대응</th><td>반송 사유를 확인하고 예외 심사 공문으로 심사 재진행</td></tr>
+            <tr><th>업종 판단</th><td>홈쇼핑 · 문화비 용도 등 업종 기준을 확인해 전용 가맹점번호 필요 여부 판단</td></tr>
+            <tr><th>정기 점검</th><td>하위몰 자체점검, 환금성 서브몰 점검, 하위몰 전수조사 회신 (<span class="mono">연 10회 이상</span>)</td></tr>
+            <tr><th>규제 대응</th><td>법 개정에 따라 결제사가 요청한 입점 기준 회신, 위반 신고 하위몰 확인 후 회신</td></tr>
+            <tr><th>모니터링</th><td>사고 발생 하위몰 모니터링 결과 회신</td></tr>
+          </table></div>
+          <div class="cases">
+            <div class="case"><b>2차PG 하위몰 심사 반송 · 2025.08</b><p><span class="to">→</span>반송 사유를 확인해 예외 심사 공문을 보냈고, 다음 날 심사가 다시 진행됐습니다.</p></div>
+            <div class="case"><b>고위험 하위몰 인증강화 요청 · 2025.12</b><p><span class="to">→</span>내부 검토 후 추가 인증을 적용하지 않기로 하고, 그 근거를 결제사에 회신했습니다.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="area" id="a3">
+        <div class="area__name"><span class="mono">운영 영역 03</span><h3>결제사 운영 · 커뮤니케이션</h3><p>요청과 회신을 기록으로</p></div>
+        <div class="area__body">
+          <p>결제사 · VAN사와의 요청은 공문과 메일로 남기고, 여러 곳이 얽힌 일정은 한 장의 일정표로 맞춥니다.</p>
+          <div class="tblwrap"><table class="rec">
+            <tr><th>공문</th><td>개설 · 특약 · 수수료 · 한도 · 인증 관련 결제사 공문 <span class="mono">500건 이상</span> (2024.11 – )</td></tr>
+            <tr><th>VAN사</th><td>VAN ID 채번, 취소 실패 문의, 매입 파일 대사 협의</td></tr>
+            <tr><th>프로젝트</th><td>매입 VAN 다중화에서 결제사 · VAN사 · 사내 개발의 범위와 일정 조율 (<a href="#p2">프로젝트 2</a>)</td></tr>
+            <tr><th>테스트</th><td>결제사 개발계 구간 테스트 환경 협의, 통합 테스트 시나리오 공유</td></tr>
+          </table></div>
+        </div>
+      </div>
+
+      <div class="area" id="a4">
+        <div class="area__name"><span class="mono">운영 영역 04</span><h3>결제사 정책 관리</h3><p>결제사마다 다른 기준을 한 표에</p></div>
+        <div class="area__body">
+          <p>결제사마다 인증 기준, 한도 조건, 업종 규정, 고객 노출 방식이 다릅니다. 기준을 표로 정리해 두고 유관부서 문의에 같은 답을 드립니다.</p>
+          <div class="tblwrap"><table class="rec">
+            <tr><th>인증 · 한도</th><td>결제사별 인증 기준과 한도 조건 취합, 유관부서 문의 대응</td></tr>
+            <tr><th>한도 관리</th><td>승인 · 매입한도 소진율 확인, 초과 전 증액 · 이관 협의</td></tr>
+            <tr><th>노출 정책</th><td>결제사 앱 · SMS 상호명 노출 정책 정리와 후속 처리 (상호명 제신고, 간판명 변경)</td></tr>
+            <tr><th>세무</th><td>문화비 소득공제 · 소득공제 제외 가맹점 관리, 해외 앱스토어 매출의 소득공제 제외 기준 소명</td></tr>
+          </table></div>
+          <div class="cases">
+            <div class="case"><b>게임 가맹점 한도 협의</b><p><span class="to">→</span>기본 한도만 가능하다는 회신에 매출 규모 · 인증 흐름 · FDS 운영 자료로 다시 협의해, 게임 결제 일 한도 50만 원 → 1,000만 원 예외 승인을 받았습니다.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="area" id="a5">
+        <div class="area__name"><span class="mono">운영 영역 05</span><h3>Chargeback · 결제 분쟁 관리</h3><p>기한 안의 소명</p></div>
+        <div class="area__body">
+          <p>해외카드 결제 서비스의 차지백 주담당이었습니다 (2025.08 – 2026.06). 기한을 놓치면 매입대금이 차감되기 때문에, 접수부터 결과 기록까지 같은 순서로 처리했습니다.</p>
+          <div class="tblwrap"><table class="rec">
+            <tr><th>처리</th><td><span class="mono">16차수 · 약 30건</span> 소명</td></tr>
+            <tr><th>흐름</th><td>접수 당일~익일 서비스팀 공유 → 증빙 기한 안내 · 리마인드 → 기한 내 소명 회신 → 결과 기록</td></tr>
+            <tr><th>이의신청</th><td>해외결제 이의신청 고객 문의 티켓 서브 담당 (<span class="mono">27건 이상</span>)</td></tr>
+            <tr><th>중재 · 민원</th><td>매출 취소 중재 공문 접수 창구 수립, 감독기관 · 결제사 민원 회신</td></tr>
+            <tr><th>인계</th><td>처리 흐름을 SOP로 작성하고, 결제사에 담당자 변경을 알린 뒤 인계</td></tr>
+          </table></div>
+          <div class="cases">
+            <div class="case"><b>이중청구 주장</b><p><span class="to">→</span>고객이 서로 다른 두 예약을 같은 결제로 오인한 건이었습니다. 예약 · 결제 내역으로 별개 거래임을 확인해 소명했습니다.</p></div>
+            <div class="case"><b>패소 분석</b><p><span class="to">→</span>가맹점이 취소한 뒤 고객과 연락이 닿지 않은 건이었습니다. 사유와 차감 예정일을 정리해 서비스팀과 재발 방지 포인트를 공유했습니다.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="area" id="a6">
+        <div class="area__name"><span class="mono">운영 영역 06</span><h3>운영 이슈 대응</h3><p>원인부터 찾기</p></div>
+        <div class="area__body">
+          <p>결제 · 취소 실패와 정산 반송이 생기면 응답코드, 로그, 파일을 먼저 확인하고 결제사 · VAN사와 재처리합니다.</p>
+          <div class="tblwrap"><table class="rec">
+            <tr><th>승인 · 취소 실패</th><td>원인 규명 <span class="mono">약 16건</span> (환금성 구분값 · 2차 인증 누락, 결제사 미매핑, 한도 초과, 미수금 한도 부족 등)</td></tr>
+            <tr><th>정산 반송</th><td>원매입일 30일 경과로 반송된 <span class="mono">721건</span>을 강제접수로 재매입, 2019년부터 누적된 반송분을 사업자별로 취합</td></tr>
+            <tr><th>반송 원인</th><td>반송률 과다 원인이 전용 가맹점 미설정임을 데이터로 찾아 전용 가맹점번호 채번</td></tr>
+            <tr><th>대사</th><td>승인 VAN ↔ 매입 VAN 파일 대사 기준과 불일치 유형별 조치표 작성, 대량 불일치 건이 실제 이슈인지 데이터로 판별</td></tr>
+          </table></div>
+        </div>
+      </div>
+
+      <div class="area" id="a7">
+        <div class="area__name"><span class="mono">운영 영역 07</span><h3>운영 개선 · 효율화</h3><p>다시 생기지 않게</p></div>
+        <div class="area__body">
+          <p>처리한 일은 다음 사람이 그대로 따라 할 수 있게 경로와 기준으로 남깁니다.</p>
+          <div class="tblwrap"><table class="rec">
+            <tr><th>요청 경로</th><td>메일로 받던 개설 요청을 Jira 템플릿으로 일원화. 요청서 v3, 개설 9단계와 단계별 소요일, 영업일 약 30일 전 요청 기준</td></tr>
+            <tr><th>테스트카드</th><td>요청 경로 표준화, 첨부 암호화와 암호 별도 전달 규칙</td></tr>
+            <tr><th>문서</th><td>채번 자가 체크리스트, 이의신청 SOP, 업무 18개 항목 인수인계 문서</td></tr>
+            <tr><th>자동화</th><td>개설 서류 생성 도구 공동 개발. 서류 작성 시간 건당 약 30분 → 10초 내외</td></tr>
+            <tr><th>VOC</th><td>혜택 미적용 민원 → 전용 가맹점번호 매출 분기. 하위몰명 불일치 → 중복 사업자명 정리. 승인 실패 문의 → 장기 미실적 단말기 정지 전 사전 협의 절차를 VAN사에 제안</td></tr>
+          </table></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="projects">
+      <div class="block__title"><span class="mono">03</span><h2 class="h2">주요 프로젝트</h2></div>
+
+      <article class="proj" id="p1">
+        <div class="proj__head"><h3>해외사업자 가맹점 연동</h3><div class="proj__tags"><span class="chip">2025 – 2026</span><span class="chip chip--plain">결제사 심사 협의</span></div></div>
+        <dl>
+          <dt>배경</dt><dd>해외법인 · 해외 PSP · 글로벌 앱마켓은 국내 사업자와 심사 기준, 업종, 세무 처리가 다르고 결제사마다 개설 가능 여부도 다릅니다.</dd>
+          <dt>역할</dt><dd><ul>
+            <li>해외법인사업자 공용 가맹점번호(일반 · 소득공제 제외 · 게임 용도)를 전 결제사와 협의해 개설</li>
+            <li>범용 개설이 안 되는 결제사는 업종을 전환하고, 책임 확약을 요구한 결제사에는 공문으로 대응</li>
+            <li>글로벌 앱마켓 2곳의 전용 가맹점 개설 검토, VAN ID 채번, 매출 취소 중재 창구 수립</li>
+            <li>대형 게임사 해외 자회사의 전용 가맹점번호 채번</li>
+          </ul></dd>
+          <dt>결과</dt><dd class="res"><ul><li>해외 PSP · 해외사업자 가맹점이 국내 카드 결제를 받을 수 있는 공용 가맹점 체계 마련</li></ul></dd>
+        </dl>
+        <a class="see" href="portfolio.html#global">포트폴리오에서 과정 보기 →</a>
+      </article>
+
+      <article class="proj" id="p2">
+        <div class="proj__head"><h3>매입 VAN 다중화 · PM</h3><div class="proj__tags"><span class="chip">2026.07 – 10</span><span class="chip chip--plain">PM · 기여도 80%</span></div></div>
+        <dl>
+          <dt>배경</dt><dd>매입을 안정적으로 진행하기 위해 매입 VAN을 다중화한 프로젝트입니다.</dd>
+          <dt>역할</dt><dd><ul>
+            <li>킥오프부터 운영 전환까지 결제사 · VAN사 · 사내 개발의 범위와 일정 총괄</li>
+            <li>QA 시나리오 직접 설계 (기본 · 엣지 · 호환 케이스, 베타 사업자 등급 5종)</li>
+            <li>매입결과파일에 건별 기본 · 제휴 수수료 항목 추가, 전 VAN사 반영일을 하루로 통일</li>
+          </ul></dd>
+          <dt>결과</dt><dd class="res"><ul>
+            <li>월 약 8,000억 원 규모 매입을 중단 없이 다중화 구조로 전환</li>
+            <li>테스트 중 결과파일 수수료 합계 누락을 찾아 VAN사 로직 보정</li>
+          </ul></dd>
+        </dl>
+        <a class="see" href="portfolio.html#van">포트폴리오에서 과정 보기 →</a>
       </article>
     </section>
 
-    <nav class="pager no-print" aria-label="문서 이동">
+    <section class="block" id="etc">
+      <div class="block__title"><span class="mono">04</span><h2 class="h2">기타</h2></div>
+      <ul class="r-list">
+        <li><b>신규 결제수단 지원</b> · 선불 결제수단의 문화비 소득공제 가맹점 등록을 한국문화정보원과 협의</li>
+        <li><b>정부 바우처</b> · 바우처 전용 가맹점번호 채번과 결제사별 간판명 등록</li>
+        <li><b>신규 업종</b> · 수입 신차 계약금 결제를 위해 결제사별 업종코드 · 소득공제 · 무이자 기준 확인</li>
+        <li><b>가맹점 문의</b> · 결제사 앱 간판명 오노출 원인(가맹점번호 오세팅)을 찾아 재채번</li>
+      </ul>
+    </section>
+
+    <section class="block" id="skills">
+      <div class="block__title"><span class="mono">05</span><h2 class="h2">보유 역량</h2></div>
+      <div class="tblwrap"><table class="tools">
+        <tr><th>Jira · OSS</th><td>개설 · 테스트카드 요청 접수 일원화, 매입 VAN 다중화 개발 요건 관리</td></tr>
+        <tr><th>SQL</th><td>반송 · 거래 데이터 추출, 문법은 AI 활용</td></tr>
+        <tr><th>Excel · Word</th><td>차지백 현황표, 결제사 정책 정리표, 대사 자료, 공문 작성</td></tr>
+        <tr><th>Confluence</th><td>개설 가이드 · 체크리스트 · SOP · 인수인계 문서 작성</td></tr>
+        <tr><th>Claude Code · VS Code</th><td>업무 자동화 도구 제작, 업무 이력 정리, 본 사이트 제작</td></tr>
+        <tr><th>Figma · Notion · Slack</th><td>도구 매뉴얼 작성, 외부사 협업</td></tr>
+      </table></div>
+    </section>
+
+    <section class="block" id="prev">
+      <div class="block__title"><span class="mono">06</span><h2 class="h2">이전 경력</h2></div>
+      <div class="job">
+        <time>2022.06 – 2024.03</time>
+        <div>
+          <h3>에이치에스효성더클래스 · 벤츠 죽전서비스센터</h3>
+          <ul class="r-list" style="margin-top:8px">
+            <li>차량 정기점검 · 경고등 관련 예약 안내와 고객 응대(CS)</li>
+            <li>지점 예약 KPI 관리, 신차 리콜 대상 확인</li>
+            <li>고객을 직접 응대하며 익힌 관점을 가맹점 문의와 차지백 소명에 씁니다</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <nav class="pager" aria-label="문서 이동">
       <a href="resume.html"><small>← 이전</small><b>이력서</b></a>
       <a href="portfolio.html"><small>다음 →</small><b>포트폴리오</b></a>
     </nav>
   </main>
 
-  <footer class="footer">© 2026 장소은</footer>
+  <footer class="footer"><div class="wrap">© 2026 장소은</div></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="assets/js/main.js"></script>
 </body>
