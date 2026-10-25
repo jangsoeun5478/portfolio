@@ -184,10 +184,10 @@
     {
       label: "개설", sub: "청약 · 세팅", duty: "결제서비스 청약 및 운영",
       on: [1, 2, 3, 4], links: ["off", "fwd", "fwd", "fwd"],
-      title: "해외 가맹점을 포함해, 가맹점이 결제를 시작하기까지",
-      ctx: ["해외 가맹점이 국내 카드로 결제를 받을 수 있도록 결제사 입점을 협의했습니다.", "신규 가맹점은 결제사 등록부터 실매출 확인까지 맡습니다."],
-      mine: ["애플 · 해외 PSP의 국내 카드 결제 연동", "신규 가맹점의 결제사 등록과 결제 환경 세팅", "결제사별 특약과 조건 반영"],
-      proof: ["해외 가맹점 연동 · 매출 발생 중"],
+      title: "가맹점이 결제를 시작하기까지",
+      ctx: ["신규 가맹점은 결제사 등록부터 실매출 확인까지 맡습니다.", "해외 가맹점이 국내 카드로 결제를 받을 수 있도록 결제사 입점도 협의했습니다."],
+      mine: ["신규 가맹점의 결제사 등록과 결제 환경 세팅", "결제사별 특약과 조건 반영", "애플 · 해외 PSP의 국내 카드 결제 연동"],
+      proof: ["VAN ID 채번 요청 167건", "해외 가맹점 연동"],
       value: "해외 가맹점 온보딩과 결제사 세팅을 첫 주부터 맡을 수 있습니다.",
     },
     {
@@ -253,8 +253,7 @@ actors: [
         <div class="life__mine"><h4>담당 업무</h4><ul>${s.mine.map((m) => `<li>${m}</li>`).join("")}</ul></div>
         <div class="life__side">
           <div class="life__proof">${s.proof.map((p) => `<span class="chip">${p}</span>`).join("")}</div>
-          <p class="life__duty">공고 업무 · <b>${s.duty}</b></p>
-          <p class="life__value"><b>입사 후 바로 할 수 있는 일</b>${s.value}</p>
+
         </div>
       </div>`;
     let cur = 0, timer = null, auto = !reduced;

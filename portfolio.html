@@ -32,21 +32,65 @@
     <div class="dochead">
       <p class="label">지원 서류 03</p>
       <h1 class="h1">포트폴리오</h1>
-      <p class="lead">경력기술서에 적은 일 가운데 여섯 가지를 골라, 어떤 순서로 판단하고 무엇을 만들었는지 그려 보았습니다.</p>
+      <p class="lead">경력기술서에 적은 일 가운데 다섯 가지를 골라, 어떤 순서로 판단하고 무엇을 만들었는지 그려 보았습니다.</p>
       <nav class="pfnav" aria-label="사례 목록">
-        <a href="#global"><small>01 · 해외 가맹점</small><b>결제사가 망설일 때 준비한 것</b></a>
-        <a href="#cb"><small>02 · Chargeback</small><b>기한 안에 끝내는 처리 순서</b></a>
-        <a href="#trace"><small>03 · 승인 실패</small><b>증상 · 원인 · 조치 기록</b></a>
-        <a href="#van"><small>04 · 품질 · 테스트</small><b>전환일을 걸친 거래 검증</b></a>
-        <a href="#open"><small>05 · 표준화</small><b>개설 단계와 체크리스트</b></a>
-        <a href="#ai"><small>06 · 자동화</small><b>한 번 입력, 여러 서류</b></a>
+        <a href="#open"><small>01 · 청약 · 심사</small><b>개설 단계와 체크리스트</b></a>
+        <a href="#global"><small>02 · 해외 가맹점</small><b>결제사가 망설일 때 준비한 것</b></a>
+        <a href="#cb"><small>03 · Chargeback</small><b>기한 안에 끝내는 처리 순서</b></a>
+        <a href="#trace"><small>04 · 운영 이슈</small><b>증상 · 원인 · 조치 기록</b></a>
+        <a href="#ai"><small>05 · 운영 개선</small><b>한 번 입력, 여러 서류</b></a>
       </nav>
     </div>
+
+    <!-- 05 개설 표준화 -->
+    <section class="pcase" id="open">
+      <div class="pcase__head">
+        <span class="pcase__no">01</span>
+        <div>
+          <div class="pcase__tags"><span class="chip">결제서비스 운영 · 표준화</span></div>
+          <h2>개설 단계마다 걸리는 시간을 적어 두고, 요청해야 할 시점을 정했습니다</h2>
+          <p>요청 부서가 일정을 맞출 수 있도록 단계별 소요일을 공개하고, 개설 담당자가 빠뜨리지 않도록 체크리스트를 함께 만들었습니다.</p>
+        </div>
+      </div>
+      <p class="subhead">개설 주요 단계와 소요일 <small>영업일 약 30일 전 요청 기준</small></p>
+      <ol class="steps">
+        <li><small>단계 1</small><b>요청 접수</b><span>Jira 템플릿</span></li>
+        <li><small>단계 2</small><b>결제사 개설</b><span>약 5~7일</span></li>
+        <li><small>단계 3</small><b>VAN ID 채번</b><span>약 2일</span></li>
+        <li><small>단계 4</small><b>하위몰 심사</b><span>약 7일</span></li>
+        <li><small>단계 5</small><b>QA</b><span>약 5일</span></li>
+        <li><small>단계 6</small><b>실연동</b><span>실매출 확인</span></li>
+      </ol>
+      <div class="check" id="check">
+        <div class="check__top"><b>채번 자가 체크리스트</b><div class="check__meter"><i><span id="checkFill"></span></i><span id="checkNum">0 / 9</span></div></div>
+        <div class="check__grid">
+          <div class="check__col">
+            <h4>공통</h4>
+            <label><input type="checkbox" id="ck1" /><span>차액정산 대상 여부</span></label>
+            <label><input type="checkbox" id="ck2" /><span>소득공제 · 문화비 해당 여부</span></label>
+            <label><input type="checkbox" id="ck3" /><span>PG · 오픈마켓 업종 구분</span></label>
+          </div>
+          <div class="check__col">
+            <h4>결제사별</h4>
+            <label><input type="checkbox" id="ck4" /><span>부분취소 등 결제사 특약</span></label>
+            <label><input type="checkbox" id="ck5" /><span>인증 · 한도 조건</span></label>
+            <label><input type="checkbox" id="ck6" /><span>환금성 업종 규정</span></label>
+          </div>
+          <div class="check__col">
+            <h4>개설 후</h4>
+            <label><input type="checkbox" id="ck7" /><span>VAN ID 채번 확인</span></label>
+            <label><input type="checkbox" id="ck8" /><span>QA 결제 · 취소</span></label>
+            <label><input type="checkbox" id="ck9" /><span>실매출 발생 확인</span></label>
+          </div>
+        </div>
+      </div>
+      <p class="note">※ 실제 체크리스트의 항목 구성을 요약한 예시입니다.<br />하나씩 눌러 볼 수 있습니다.</p>
+    </section>
 
     <!-- 01 해외 가맹점 -->
     <section class="pcase" id="global">
       <div class="pcase__head">
-        <span class="pcase__no">01</span>
+        <span class="pcase__no">02</span>
         <div>
           <div class="pcase__tags"><span class="chip">해외 가맹점 · 국내 카드 결제</span><span class="chip chip--plain">애플 · 해외 PSP</span></div>
           <h2>결제사가 해외 가맹점 연동을 망설일 때, 판단에 필요한 자료를 먼저 채웠습니다</h2>
@@ -120,7 +164,7 @@
           <h4>취소 분쟁이 생기면 받을 곳</h4>
           <ul>
             <li>글로벌 앱마켓 연동에 맞춰 결제사의 매출 취소 중재 공문을 받을 대표 창구를 정해 회신</li>
-            <li>해외카드 차지백 처리 흐름은 <a href="#cb">02 사례</a>에 정리했습니다</li>
+            <li>해외카드 차지백 처리 흐름은 <a href="#cb">03 사례</a>에 정리했습니다</li>
           </ul>
         </div>
       </div>
@@ -130,7 +174,7 @@
     <!-- 02 차지백 -->
     <section class="pcase" id="cb">
       <div class="pcase__head">
-        <span class="pcase__no">02</span>
+        <span class="pcase__no">03</span>
         <div>
           <div class="pcase__tags"><span class="chip">Chargeback · 결제 분쟁</span><span class="chip chip--plain">해외카드 결제 서비스</span></div>
           <h2>차지백은 같은 순서로 처리해야 기한을 놓치지 않습니다</h2>
@@ -177,7 +221,7 @@
     <!-- 03 원인 추적 -->
     <section class="pcase" id="trace">
       <div class="pcase__head">
-        <span class="pcase__no">03</span>
+        <span class="pcase__no">04</span>
         <div>
           <div class="pcase__tags"><span class="chip">운영 이슈 대응</span></div>
           <h2>승인 실패가 생기면 증상 · 원인 · 조치 순서로 기록했습니다</h2>
@@ -220,98 +264,10 @@
       </div>
     </section>
 
-    <!-- 04 매입 VAN QA -->
-    <section class="pcase" id="van">
-      <div class="pcase__head">
-        <span class="pcase__no">04</span>
-        <div>
-          <div class="pcase__tags"><span class="chip">품질 관리 · 테스트</span><span class="chip chip--plain">매입 VAN 다중화</span></div>
-          <h2>전환일을 걸친 거래까지 케이스로 만들어 오픈 전에 검증했습니다</h2>
-          <p>매입과 취소, 차액정산과 그 취소가 서로 다른 VAN사에서 처리되는 경우를 미리 만들어 보지 않으면, 전환 뒤에 대사가 어긋납니다.<br />알파 · 베타 · 리얼 순서로 나눠 확인했습니다.</p>
-        </div>
-      </div>
-      <p class="subhead">QA 시나리오 구조 <span class="seg no-print" id="qaSeg" role="group" aria-label="케이스 필터"><button type="button" data-f="all" aria-pressed="true">전체</button><button type="button" data-f="base" aria-pressed="false">기본</button><button type="button" data-f="edge" aria-pressed="false">엣지</button><button type="button" data-f="compat" aria-pressed="false">호환</button></span></p>
-      <div class="qawrap">
-        <table class="qa" id="qaTbl">
-          <thead><tr><th>구분</th><th>케이스</th><th>확인 포인트</th></tr></thead>
-          <tbody>
-            <tr data-k="base"><td><span class="chip">기본</span></td><td>매입 → 매입취소 → 차액정산 → 차액정산 취소</td><td>신규 VAN사 단독 처리</td></tr>
-            <tr data-k="base"><td><span class="chip">기본</span></td><td>매입 → 차액정산 → 매입 후 부분취소</td><td>부분취소 금액 정합성</td></tr>
-            <tr data-k="edge"><td><span class="chip chip--warn">엣지</span></td><td>매입 VAN사 ≠ 매입 후 취소 VAN사</td><td>전환일을 걸친 거래</td></tr>
-            <tr data-k="edge"><td><span class="chip chip--warn">엣지</span></td><td>매입 VAN사 ≠ 차액정산 VAN사</td><td>전환일을 걸친 거래</td></tr>
-            <tr data-k="edge"><td><span class="chip chip--warn">엣지</span></td><td>다른 결제사 거래가 신규 VAN사 파일에 섞인 경우</td><td>방어 로직</td></tr>
-            <tr data-k="edge"><td><span class="chip chip--warn">엣지</span></td><td>일별 대사 불일치 (익월 매입 가맹점)</td><td>대사 기준</td></tr>
-            <tr data-k="compat"><td><span class="chip chip--ok">호환</span></td><td>기존 VAN사 포맷 변경 후에도 정상 매입되는지</td><td>회귀 확인</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="two">
-        <div class="box">
-          <h4>테스트에서 찾은 것</h4>
-          <ul>
-            <li>결과파일 수수료 합계에 제휴수수료가 빠져 있어 VAN사 로직 보정</li>
-            <li>다른 결제사 거래가 섞여도 걸러지지 않는 구조에 방어 로직 요청</li>
-          </ul>
-        </div>
-        <div class="box">
-          <h4>운영 전환 후</h4>
-          <ul>
-            <li>로직 변경 전에 들어온 거래는 기존 VAN에서 매입되도록 조치</li>
-            <li>일별 대사 결과를 받아 불일치 건을 매일 확인</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 05 개설 표준화 -->
-    <section class="pcase" id="open">
-      <div class="pcase__head">
-        <span class="pcase__no">05</span>
-        <div>
-          <div class="pcase__tags"><span class="chip">결제서비스 운영 · 표준화</span></div>
-          <h2>개설 단계마다 걸리는 시간을 적어 두고, 요청해야 할 시점을 정했습니다</h2>
-          <p>요청 부서가 일정을 맞출 수 있도록 단계별 소요일을 공개하고, 개설 담당자가 빠뜨리지 않도록 체크리스트를 함께 만들었습니다.</p>
-        </div>
-      </div>
-      <p class="subhead">개설 주요 단계와 소요일 <small>영업일 약 30일 전 요청 기준</small></p>
-      <ol class="steps">
-        <li><small>단계 1</small><b>요청 접수</b><span>Jira 템플릿</span></li>
-        <li><small>단계 2</small><b>결제사 개설</b><span>약 5~7일</span></li>
-        <li><small>단계 3</small><b>VAN ID 채번</b><span>약 2일</span></li>
-        <li><small>단계 4</small><b>하위몰 심사</b><span>약 7일</span></li>
-        <li><small>단계 5</small><b>QA</b><span>약 5일</span></li>
-        <li><small>단계 6</small><b>실연동</b><span>실매출 확인</span></li>
-      </ol>
-      <div class="check" id="check">
-        <div class="check__top"><b>채번 자가 체크리스트</b><div class="check__meter"><i><span id="checkFill"></span></i><span id="checkNum">0 / 9</span></div></div>
-        <div class="check__grid">
-          <div class="check__col">
-            <h4>공통</h4>
-            <label><input type="checkbox" id="ck1" /><span>차액정산 대상 여부</span></label>
-            <label><input type="checkbox" id="ck2" /><span>소득공제 · 문화비 해당 여부</span></label>
-            <label><input type="checkbox" id="ck3" /><span>PG · 오픈마켓 업종 구분</span></label>
-          </div>
-          <div class="check__col">
-            <h4>결제사별</h4>
-            <label><input type="checkbox" id="ck4" /><span>부분취소 등 결제사 특약</span></label>
-            <label><input type="checkbox" id="ck5" /><span>인증 · 한도 조건</span></label>
-            <label><input type="checkbox" id="ck6" /><span>환금성 업종 규정</span></label>
-          </div>
-          <div class="check__col">
-            <h4>개설 후</h4>
-            <label><input type="checkbox" id="ck7" /><span>VAN ID 채번 확인</span></label>
-            <label><input type="checkbox" id="ck8" /><span>QA 결제 · 취소</span></label>
-            <label><input type="checkbox" id="ck9" /><span>실매출 발생 확인</span></label>
-          </div>
-        </div>
-      </div>
-      <p class="note">※ 실제 체크리스트의 항목 구성을 요약한 예시입니다.<br />하나씩 눌러 볼 수 있습니다.</p>
-    </section>
-
     <!-- 06 자동화 -->
     <section class="pcase" id="ai">
       <div class="pcase__head">
-        <span class="pcase__no">06</span>
+        <span class="pcase__no">05</span>
         <div>
           <div class="pcase__tags"><span class="chip">AI · 자동화 도구 활용</span><span class="chip chip--plain">동료와 공동 개발</span></div>
           <h2>같은 정보를 서류마다 다시 적지 않도록, 한 번 입력으로 여러 서류를</h2>
@@ -334,7 +290,7 @@
     <section class="closing">
       <div>
         <h2>서류로 다 담지 못한 과정은 직접 말씀드리겠습니다</h2>
-        <p>여섯 가지 사례 모두 처음에는 메일 한 통, 문의 한 건에서 시작했습니다.<br />그 한 건을 끝까지 따라가 정리하는 일을 계속 하고 싶습니다.<br />기회를 주시면 감사하겠습니다.</p>
+        <p>다섯 가지 사례 모두 처음에는 메일 한 통, 문의 한 건에서 시작했습니다.<br />그 한 건을 끝까지 따라가 정리하는 일을 계속 하고 싶습니다.<br />기회를 주시면 감사하겠습니다.</p>
       </div>
       <div class="closing__mail">
         <code>thdms5478@naver.com</code>
