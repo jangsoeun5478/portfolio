@@ -32,34 +32,31 @@
     <div class="dochead">
       <p class="label">지원 서류 03</p>
       <h1 class="h1">포트폴리오</h1>
-      <p class="lead">경력기술서에 적은 일 가운데 다섯 가지를 골라, 어떤 순서로 판단하고 무엇을 만들었는지 그려 보았습니다.</p>
+      <p class="lead">다섯 가지 일을 골라, 어떻게 판단하고 무엇을 만들었는지 담았습니다.</p>
       <nav class="pfnav" aria-label="사례 목록">
-        <a href="#open"><small>01 · 청약 · 심사</small><b>개설 단계와 체크리스트</b></a>
-        <a href="#global"><small>02 · 해외 가맹점</small><b>카드사가 망설일 때 준비한 것</b></a>
-        <a href="#cb"><small>03 · Chargeback</small><b>기한 안에 끝내는 처리 순서</b></a>
+        <a href="#open"><small>01 · 입점</small><b>입점 여섯 단계와 체크리스트</b></a>
+        <a href="#global"><small>02 · 해외 가맹점</small><b>판단 자료를 먼저 건네기</b></a>
+        <a href="#cb"><small>03 · 차지백</small><b>기한 안에 끝내는 처리 순서</b></a>
         <a href="#trace"><small>04 · 운영 이슈</small><b>증상 · 원인 · 조치 기록</b></a>
-        <a href="#ai"><small>05 · 운영 개선</small><b>한 번 입력, 여러 서류</b></a>
+        <a href="#ai"><small>05 · 자동화</small><b>한 번 입력, 여러 서류</b></a>
       </nav>
     </div>
-
-    <!-- 05 개설 표준화 -->
     <section class="pcase" id="open">
       <div class="pcase__head">
         <span class="pcase__no">01</span>
         <div>
-          <div class="pcase__tags"><span class="chip">결제서비스 운영 · 표준화</span></div>
-          <h2>개설 단계마다 걸리는 시간을 적어 두고, 요청해야 할 시점을 정했습니다</h2>
-          <p>요청 부서가 일정을 맞출 수 있도록 <span class="nw">Sub-merchant(하위몰)</span> 심사까지 단계별 소요일을 공개하고, 개설 담당자가 빠뜨리지 않도록 체크리스트를 함께 만들었습니다.</p>
+          <h2>입점까지 걸리는 시간을 단계마다 적어, 요청 시점을 정했습니다</h2>
+          <p>요청 부서는 일정을 맞추고, 담당자는 빠뜨리지 않도록 체크리스트를 함께 만들었습니다.</p>
         </div>
       </div>
-      <p class="subhead">개설 주요 단계와 소요일 <small>영업일 약 30일 전 요청 기준</small></p>
+      <p class="subhead">입점 단계와 소요일 <small>영업일 약 30일 전 요청 기준</small></p>
       <ol class="steps">
-        <li><small>단계 1</small><b>요청 접수</b><span>Jira 템플릿</span></li>
-        <li><small>단계 2</small><b>카드사 개설</b><span>약 5~7일</span></li>
-        <li><small>단계 3</small><b>VAN ID 채번</b><span>약 2일</span></li>
-        <li><small>단계 4</small><b>하위몰 심사</b><span>약 7일</span></li>
-        <li><small>단계 5</small><b>QA</b><span>약 5일</span></li>
-        <li><small>단계 6</small><b>실연동</b><span>실매출 확인</span></li>
+        <li><small>01</small><b>가맹점번호 채번</b><span>약 5~7일</span></li>
+        <li><small>02</small><b>특약 반영</b><span>카드사별 조건</span></li>
+        <li><small>03</small><b>단말기ID 채번</b><span>약 2일</span></li>
+        <li><small>04</small><b>하위몰 심사</b><span>약 7일</span></li>
+        <li><small>05</small><b>QA</b><span>약 5일</span></li>
+        <li><small>06</small><b>실제 연동</b><span>실매출 확인</span></li>
       </ol>
       <div class="check" id="check">
         <div class="check__top"><b>채번 자가 체크리스트</b><div class="check__meter"><i><span id="checkFill"></span></i><span id="checkNum">0 / 9</span></div></div>
@@ -78,23 +75,20 @@
           </div>
           <div class="check__col">
             <h4>개설 후</h4>
-            <label><input type="checkbox" id="ck7" /><span>VAN ID 채번 확인</span></label>
+            <label><input type="checkbox" id="ck7" /><span>단말기ID 채번 확인</span></label>
             <label><input type="checkbox" id="ck8" /><span>QA 결제 · 취소</span></label>
             <label><input type="checkbox" id="ck9" /><span>실매출 발생 확인</span></label>
           </div>
         </div>
       </div>
-      <p class="note">※ 실제 체크리스트의 항목 구성을 요약한 예시입니다.<br />하나씩 눌러 볼 수 있습니다.</p>
+      <p class="note">※ 실제 체크리스트를 요약한 예시입니다.</p>
     </section>
-
-    <!-- 01 해외 가맹점 -->
     <section class="pcase" id="global">
       <div class="pcase__head">
         <span class="pcase__no">02</span>
         <div>
-          <div class="pcase__tags"><span class="chip">해외 가맹점 · 국내 카드 결제</span><span class="chip chip--plain">애플 · 해외 PSP</span></div>
-          <h2>카드사가 해외 가맹점 연동을 망설일 때, 판단에 필요한 자료를 먼저 채웠습니다</h2>
-          <p>해외 가맹점은 카드사가 매출 규모를 미리 가늠하기 어렵습니다.<br />카드사가 무엇을 걱정하는지부터 정리하고, 그 걱정에 답하는 자료로 입점과 하위몰 심사를 진행했습니다.</p>
+          <h2>카드사가 망설일 때, 판단할 자료를 먼저 건넸습니다</h2>
+          <p>애플 · 해외 PSP 연동에서 카드사가 걱정한 것과 제가 준비한 것입니다.</p>
         </div>
       </div>
       <div class="think">
@@ -119,66 +113,26 @@
         <div>
           <small>이어진 결과</small>
           <h4>입점 → 하위몰 심사 → 결제 연동</h4>
-          <p>심사 단계에서 멈추지 않고 결제 연동까지 이어졌고, 연동 이후 매출이 계속 발생하고 있습니다.</p>
+          <p>큰 이슈 없이 연동했고, 지금도 매출이 발생하고 있습니다.</p>
         </div>
       </div>
-      <p class="subhead">연결 구조</p>
-      <div class="gflow" aria-label="해외 가맹점에서 카드사까지 연결 구조">
+            <div class="gflow" aria-label="해외 가맹점에서 카드사까지 연결 구조">
         <div class="gflow__node"><small>해외 가맹점</small><b>애플 · 해외 PSP</b></div>
         <i aria-hidden="true"></i>
         <div class="gflow__node is-me"><small>PG · 직접 세팅</small><b>가맹점번호 · 결제 세팅</b></div>
         <i aria-hidden="true"></i>
-        <div class="gflow__node"><small>VAN</small><b>VAN ID 채번</b></div>
+        <div class="gflow__node"><small>VAN</small><b>단말기ID 채번</b></div>
         <i aria-hidden="true"></i>
         <div class="gflow__node"><small>카드사</small><b>입점 · 하위몰 심사</b></div>
       </div>
-      <div class="tabs" id="gtabs">
-        <div class="tabs__btns" role="tablist" aria-label="연동하며 함께 정한 것">
-          <button type="button" role="tab" data-g="1" aria-selected="true">입점 협의</button>
-          <button type="button" role="tab" data-g="2" aria-selected="false">하위몰 심사</button>
-          <button type="button" role="tab" data-g="3" aria-selected="false">세무 기준</button>
-          <button type="button" role="tab" data-g="4" aria-selected="false">취소 중재 창구</button>
-        </div>
-        <div class="tabs__pane" role="tabpanel" data-g="1">
-          <h4>판단할 자료를 먼저 건넵니다</h4>
-          <ul>
-            <li>연동이 왜 필요한지, 어떤 거래가 일어날지를 자료로 정리해 카드사에 전달</li>
-            <li>기존 방식으로 개설이 어려운 카드사는 조건에 맞춰 업종과 서류를 조정</li>
-          </ul>
-        </div>
-        <div class="tabs__pane" role="tabpanel" data-g="2" hidden>
-          <h4>심사가 멈추지 않게</h4>
-          <ul>
-            <li>입점 협의 단계에서 받은 질문과 자료를 하위몰 심사 단계까지 이어서 전달</li>
-            <li>심사 중 추가 확인이 필요한 항목은 바로 답해 일정이 늘어지지 않게 함</li>
-          </ul>
-        </div>
-        <div class="tabs__pane" role="tabpanel" data-g="3" hidden>
-          <h4>해외 앱스토어 매출의 소득공제</h4>
-          <ul>
-            <li>국세청 해외사업자 가이드를 근거로 소득공제 제외 기준을 정리해 카드사에 소명</li>
-            <li>같은 기준을 사내에 공유해 연말정산 대사에 반영</li>
-          </ul>
-        </div>
-        <div class="tabs__pane" role="tabpanel" data-g="4" hidden>
-          <h4>취소 분쟁이 생기면 받을 곳</h4>
-          <ul>
-            <li>글로벌 앱마켓 연동에 맞춰 카드사의 매출 취소 중재 공문을 받을 대표 창구를 정해 회신</li>
-            <li>해외카드 차지백 처리 흐름은 <a href="#cb">03 사례</a>에 정리했습니다</li>
-          </ul>
-        </div>
-      </div>
       <p class="retro"><b>배운 점</b>카드사가 망설인 이유는 판단할 자료가 부족했기 때문이었습니다.<br />자료를 먼저 채우니 협의가 빨라졌습니다.</p>
     </section>
-
-    <!-- 02 차지백 -->
     <section class="pcase" id="cb">
       <div class="pcase__head">
         <span class="pcase__no">03</span>
         <div>
-          <div class="pcase__tags"><span class="chip">Chargeback · 결제 분쟁</span><span class="chip chip--plain">해외카드 결제 서비스</span></div>
-          <h2>차지백은 같은 순서로 처리해야 기한을 놓치지 않습니다</h2>
-          <p>증빙은 서비스팀에 있고 소명 기한은 카드사가 정합니다.<br />둘 사이에서 기한을 놓치지 않도록 접수부터 결과 기록까지 순서를 고정했습니다.</p>
+          <h2>차지백은 같은 순서로 처리해야 기한을 지킵니다</h2>
+          <p>증빙은 서비스팀에, 기한은 카드사에 있습니다.<br />그 사이에서 놓치지 않도록 순서를 고정했습니다.</p>
         </div>
       </div>
       <p class="subhead">처리 순서 <small>결과를 골라 보세요</small></p>
@@ -217,15 +171,12 @@
       </div>
       <p class="retro"><b>배운 점</b>차지백을 줄이려면 가맹점의 취소 처리와 고객 안내 과정까지 함께 봐야 했습니다.</p>
     </section>
-
-    <!-- 03 원인 추적 -->
     <section class="pcase" id="trace">
       <div class="pcase__head">
         <span class="pcase__no">04</span>
         <div>
-          <div class="pcase__tags"><span class="chip">운영 이슈 대응</span></div>
           <h2>승인 실패가 생기면 증상 · 원인 · 조치 순서로 기록했습니다</h2>
-          <p>겉으로 보이는 증상은 비슷해도 원인은 인증 설정, 매핑, 한도처럼 제각각입니다.<br />카드사와 협의하며 처리한 세 건을 같은 틀로 정리했습니다.</p>
+          <p>증상은 비슷해도 원인은 제각각입니다.<br />세 건을 같은 틀로 정리했습니다.</p>
         </div>
       </div>
       <div class="trace" id="traceBox">
@@ -251,15 +202,12 @@
         </div>
       </div>
     </section>
-
-    <!-- 06 자동화 -->
     <section class="pcase" id="ai">
       <div class="pcase__head">
         <span class="pcase__no">05</span>
         <div>
-          <div class="pcase__tags"><span class="chip">AI · 자동화 도구 활용</span><span class="chip chip--plain">동료와 공동 개발</span></div>
-          <h2>같은 정보를 서류마다 다시 적지 않도록, 한 번 입력으로 여러 서류를</h2>
-          <p>카드사마다 양식은 달라도 신청일 · 간판명 · 대금 입금계좌 · 요청자는 늘 같습니다.<br />이 네 칸만 채우면 서류가 한꺼번에 만들어지는 흐름을 아래에서 직접 눌러 보실 수 있습니다.</p>
+          <h2>한 번 입력하면, 카드사별 서류가 함께 만들어집니다</h2>
+          <p>양식은 달라도 들어가는 정보는 같았습니다.<br />동료와 함께 만든 도구의 원리를 아래에서 눌러 보실 수 있습니다.</p>
         </div>
       </div>
       <div class="demo">
@@ -272,13 +220,13 @@
         </form>
         <div class="docs" id="docs" aria-live="polite"></div>
       </div>
-      <p class="note">※ 가상 데이터로 동작 원리를 재현한 데모입니다.<br />카드사명과 양식은 예시입니다.</p>
+      <p class="note">※ 가상 데이터로 재현한 데모입니다.</p>
     </section>
 
     <section class="closing">
       <div>
-        <h2>사례마다 만든 문서와 도구가 지금도 쓰이고 있습니다</h2>
-        <p>다섯 가지 사례 모두 처음에는 메일 한 통, 문의 한 건에서 시작했습니다.<br />그 한 건을 끝까지 따라가 정리하는 방식으로 일해 왔습니다.</p>
+        <h2>한 건을 끝까지 따라가, 다음 사람이 쓸 수 있게 남깁니다</h2>
+        <p>다섯 사례에서 만든 문서와 도구는 지금도 팀에서 쓰이고 있습니다.</p>
       </div>
       <div class="closing__mail">
         <code>thdms5478@naver.com</code>

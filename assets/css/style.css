@@ -489,14 +489,13 @@ h1, h2, h3, h4 { font-family: var(--f-display); text-wrap: balance; letter-spaci
 .life__pane { display: grid; gap: 16px; }
 .life__pane h3 { font-size: 21px; }
 .life__ctx { color: var(--ink-2); max-width: 70ch; }
-.life__grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 14px; }
-.life__mine { padding: 18px 20px; border-radius: 12px; background: var(--paper); border: 1px solid var(--line); display: grid; gap: 10px; align-content: start; }
-.life__mine h4 { font-size: 14.5px; color: var(--accent); }
-.life__mine ul { display: grid; gap: 7px; }
-.life__mine li { position: relative; padding-left: 14px; font-size: 14.5px; color: var(--ink); }
-.life__mine li::before { content: ""; position: absolute; left: 0; top: .72em; width: 6px; height: 2px; background: var(--accent); }
-.life__side { display: grid; gap: 12px; align-content: start; }
-.life__proof { display: flex; flex-wrap: wrap; gap: 6px; }
+.life__steps { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; counter-reset: st; }
+.life__steps li { counter-increment: st; position: relative; padding: 12px 12px 12px; border-radius: 10px; background: var(--paper); border: 1px solid var(--line); font-family: var(--f-display); font-weight: 600; font-size: 14px; color: var(--ink); display: grid; gap: 4px; }
+.life__steps li::before { content: counter(st, decimal-leading-zero); font-family: var(--f-mono); font-size: 11.5px; font-weight: 500; color: var(--accent); }
+.life__steps li:last-child { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+.life__list { display: grid; gap: 8px; }
+.life__list li { position: relative; padding-left: 16px; font-size: 15px; color: var(--ink); }
+.life__list li::before { content: ""; position: absolute; left: 0; top: .72em; width: 7px; height: 2px; background: var(--accent); }
 .life__duty { font-size: 12.5px; color: var(--ink-3); }
 .life__duty b { color: var(--ink-2); }
 .life__value { padding: 16px 18px; border-radius: 12px; border-left: 3px solid var(--accent); background: var(--accent-soft); font-size: 14.5px; color: var(--ink); }
@@ -506,7 +505,7 @@ h1, h2, h3, h4 { font-family: var(--f-display); text-wrap: balance; letter-spaci
   .life__body { padding: 20px 16px; }
   .actors { grid-template-columns: repeat(5, minmax(0, 1fr)); row-gap: 8px; padding: 14px 8px; }
   .link { display: none; }
-  .life__grid { grid-template-columns: 1fr; }
+  .life__steps { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media print { .life__tabs, .life__legend { display: none; } .link i { animation: none; } }
 

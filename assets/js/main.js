@@ -186,45 +186,37 @@
   // links: 고객-가맹점, 가맹점-PG, PG-VAN, VAN-카드사 / fwd 요청 · rev 대금 · both 양방향 · opt 경유 가능 · off 없음
   const STAGES = [
     {
-      label: "개설", sub: "청약 · 세팅", duty: "결제서비스 청약 및 운영",
+      label: "개설", sub: "가맹점번호 · 특약",
       on: [1, 2, 3, 4], links: ["off", "fwd", "fwd", "fwd"],
-      title: "가맹점이 결제를 시작하기까지",
-      ctx: ["신규 가맹점은 카드사 등록부터 실매출 확인까지 맡습니다.", "해외 가맹점이 국내 카드로 결제를 받을 수 있도록 카드사 입점도 협의했습니다."],
-      mine: ["신규 가맹점의 카드사 등록과 결제 환경 세팅", "카드사별 특약과 조건 반영", "애플 · 해외 PSP의 국내 카드 결제 연동"],
-      proof: ["신규 가맹점 개설", "해외 가맹점 연동"],
-      value: "해외 가맹점 온보딩과 카드사 세팅을 첫 주부터 맡을 수 있습니다.",
+      title: "가맹점번호 하나로 결제가 열리기까지",
+      ctx: ["국내 · 해외 사업자 가맹점이 입점할 수 있도록 전 과정을 맡았습니다.", "애플 · 해외 PSP의 국내 카드 결제도 이 과정으로 열었습니다."],
+      steps: ["가맹점번호 채번", "특약 반영", "단말기ID 채번", "하위몰 심사", "QA", "실제 연동"],
     },
     {
-      label: "심사", sub: "반송 · 점검", duty: "가맹점 심사",
+      label: "심사", sub: "하위몰 심사",
       on: [1, 2, 4], links: ["off", "fwd", "opt", "both"],
-      title: "대행할 가맹점이 카드사 심사를 통과하기까지",
-      ctx: ["결제대행 가맹점은 카드사에 대행해도 되는지 하위몰 심사를 받습니다.", "카드사가 반송하면 사유를 직접 확인하고 협의해 입점할 수 있게 합니다."],
-      mine: ["심사 부서에 카드사 기준 가이드 제공", "반송 시 카드사와 직접 사유 확인 · 협의", "카드사 정기 점검 · 모니터링 회신"],
-      proof: ["예외 심사 협의", "정기 점검 회신"],
-      value: "가맹점 심사 기준을 카드사 정책과 맞춰 운영할 수 있습니다.",
+      title: "카드사 심사를 넘어 입점하기까지",
+      ctx: ["결제대행 가맹점은 카드사의 하위몰 심사를 거쳐야 입점합니다.", "반송되면 사유를 직접 확인하고 카드사와 협의했습니다."],
+      mine: ["심사 부서에 카드사 기준 가이드 제공", "반송 사유 확인과 카드사 협의", "카드사 정기 점검 회신"],
     },
     {
-      label: "승인", sub: "인증 · 한도", duty: "카드사 정책 관리 · 운영 이슈 대응",
+      label: "승인", sub: "인증 · 한도",
       on: [0, 1, 2, 3, 4], links: ["fwd", "fwd", "opt", "both"],
-      title: "결제가 막히지 않도록 카드사 정책까지",
-      ctx: ["카드사마다 인증 기준과 한도가 다릅니다.", "오픈 전에 차이를 찾아 맞추고, 실패가 생기면 원인부터 찾습니다."],
-      mine: ["카드사별 인증 · 한도 정책 정리", "오픈 전 테스트로 인증 차이 발견 · 해소", "승인 실패 원인 규명과 카드사 협의"],
-      proof: ["인증 차이 사전 해소", "원인 규명"],
-      value: "신규 가맹점의 결제 조건을 카드사 기준에 맞춰 제안할 수 있습니다.",
+      title: "결제가 막히지 않도록",
+      ctx: ["카드사마다 인증 기준과 한도가 다릅니다.", "오픈 전에 차이를 맞추고, 실패하면 원인부터 찾습니다."],
+      mine: ["카드사별 인증 · 한도 정책 관리", "게임 결제 일 한도 예외 승인 협의", "승인 실패 원인 규명과 카드사 협의"],
     },
     {
-      label: "매입", sub: "VAN · 정산", duty: "카드사 운영 및 커뮤니케이션",
+      label: "매입", sub: "VAN · 정산",
       on: [2, 3, 4], links: ["off", "off", "both", "both"],
-      title: "승인된 거래가 대금으로 확정되기까지",
-      ctx: ["매입 VAN 다중화를 PM으로 맡아 운영 전환까지 이끌었습니다.", "정산 반송이 쌓이면 데이터로 원인을 찾아 정리합니다."],
-      mine: ["매입 VAN 다중화 PM", "QA 시나리오 설계와 오픈 전 검증", "차액정산 반송 건 일괄 재매입"],
-      proof: ["매입 VAN 다중화 PM", "QA 시나리오"],
-      value: "카드사 · VAN 연동과 매입 대사 이슈를 바로 맡을 수 있습니다.",
+      title: "승인된 거래가 대금이 되기까지",
+      ctx: ["매입 VAN 다중화를 PM으로 맡아 무중단으로 전환했습니다.", "쌓여 있던 정산 반송은 원인을 찾아 정리했습니다."],
+      mine: ["매입 VAN 다중화 PM", "QA 시나리오 설계와 오픈 전 검증", "차액정산 반송 재매입과 재발 방지"],
     },
     {
-      label: "분쟁", sub: "차지백 · 개선", duty: "Chargeback 및 결제 분쟁 관리 · 운영 개선 및 효율화",
+      label: "분쟁", sub: "차지백",
       on: [0, 1, 2, 3, 4], links: ["both", "both", "both", "both"],
-actors: [
+      actors: [
         { icon: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>', label: "해외카드" },
         { icon: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10l9-6 9 6"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8"/><path d="M3 21h18"/></svg>', label: "발급사" },
         { icon: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>', label: "브랜드사" },
@@ -232,11 +224,9 @@ actors: [
         { icon: '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l1.5-5h15L21 9"/><path d="M4 9v11h16V9"/><path d="M9 20v-6h6v6"/></svg>', label: "가맹점", me: true },
       ],
       legend: ["차지백 접수 (해외카드 → 가맹점)", "소명자료 제출 (가맹점 → 해외카드)"],
-      title: "결제 이후의 차지백과 재발 방지까지",
-      ctx: ["해외카드 차지백은 기한 안에 소명하지 못하면 매입대금이 차감됩니다.", "처리 흐름을 SOP로 남기고, 반복되는 민원은 원인이 된 구조를 바꿉니다."],
-      mine: ["해외카드 차지백 접수 · 분석 · 소명 · 결과 관리", "처리 순서를 SOP로 정리해 인계", "반복 민원의 원인을 찾아 구조 개선"],
-      proof: ["차지백 주담당", "SOP 작성"],
-      value: "차지백 · 분쟁 프로세스를 바로 운영하고 개선할 수 있습니다.",
+      title: "결제 이후의 분쟁까지",
+      ctx: ["해외카드 차지백은 기한 안에 소명하지 못하면 매입대금이 차감됩니다.", "접수부터 결과까지 맡고, 처리 순서를 SOP로 남겼습니다."],
+      mine: ["차지백 접수 · 분석 · 소명 · 결과 관리", "소명 처리 순서 SOP 작성"],
     },
   ];
   const lifeEl = $("#life");
@@ -253,13 +243,8 @@ actors: [
     const paneHTML = (s) => `
       <h3>${s.title}</h3>
       <p class="life__ctx">${s.ctx.join("<br />")}</p>
-      <div class="life__grid">
-        <div class="life__mine"><h4>담당 업무</h4><ul>${s.mine.map((m) => `<li>${m}</li>`).join("")}</ul></div>
-        <div class="life__side">
-          <div class="life__proof">${s.proof.map((p) => `<span class="chip">${p}</span>`).join("")}</div>
-
-        </div>
-      </div>`;
+      ${s.steps ? `<ol class="life__steps">${s.steps.map((t) => `<li>${t}</li>`).join("")}</ol>` : ""}
+      ${s.mine ? `<ul class="life__list">${s.mine.map((m) => `<li>${m}</li>`).join("")}</ul>` : ""}`;
     let cur = 0, timer = null, auto = !reduced;
     const render = (i) => {
       cur = i;
