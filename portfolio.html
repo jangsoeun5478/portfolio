@@ -4,13 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>장소은 | 포트폴리오</title>
-<meta name="description" content="장소은 포트폴리오 · 결제 운영에서 판단하고 만든 것 다섯 가지">
+<meta name="description" content="장소은 포트폴리오 · 결제인프라 기획/운영 경험 네 가지">
+<meta property="og:type" content="website">
+<meta property="og:title" content="장소은 | 포트폴리오">
+<meta property="og:description" content="장소은 포트폴리오 · 결제인프라 기획/운영 경험 네 가지">
+<meta property="og:image" content="https://jangsoeun5478.github.io/portfolio/assets/img/profile.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%231f3a6d%22/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <header class="top"><div class="top-in">
-  <a class="brand" href="index.html">장소은<span>결제 운영</span></a>
+  <a class="brand" href="index.html">장소은</a>
   <nav class="nav" aria-label="서류">
     <a href="index.html">홈</a>
     <a href="resume.html">이력서</a>
@@ -22,195 +27,168 @@
 
 <main class="wrap">
   <section class="doc-head">
-    <p class="kicker">지원 서류 03</p>
-    <h1>포트폴리오</h1>
-    <p class="lead">경력기술서에 적은 일 가운데 다섯 가지를 골라, 어떤 순서로 판단하고 무엇을 만들었는지 담았습니다.</p>
-    <nav class="cases" aria-label="사례 목차">
-      <a href="#c1"><span class="no">01 · 입점</span>단계와 체크리스트</a>
-      <a href="#c2"><span class="no">02 · 해외 가맹점</span>판단 자료 먼저</a>
-      <a href="#c3"><span class="no">03 · 차지백</span>기한을 지키는 순서</a>
-      <a href="#c4"><span class="no">04 · 운영 이슈</span>증상 · 원인 · 조치</a>
-      <a href="#c5"><span class="no">05 · 자동화</span>한 번 입력, 여러 서류</a>
+    <p class="kicker rv">지원 서류 03 · 포트폴리오</p>
+    <h1 class="rv d1">네 장면으로 보는<br>제가 일하는 방식</h1>
+    <p class="lead rv d2">상황, 제가 본 것, 한 일, 바뀐 것 순서입니다. 02를 제외한 장면은 직접 눌러 보실 수 있습니다.</p>
+    <nav class="cases rv d3" aria-label="경험 목차">
+      <a href="#c1"><span class="no">01 · 심사 가이드</span>문의를 기준으로</a>
+      <a href="#c2"><span class="no">02 · 서비스 단위</span>묶어야 보이는 매출</a>
+      <a href="#c3"><span class="no">03 · 매입 VAN</span>멈추지 않는 전환</a>
+      <a href="#c4"><span class="no">04 · 자동화</span>한 번 입력, 여러 서류</a>
     </nav>
   </section>
 
   <!-- 01 -->
-  <section class="case" id="c1" aria-labelledby="h-p1">
-    <div class="case-h">
-      <span class="no">01 · 결제서비스 운영 표준화</span>
-      <h2 id="h-p1">입점까지 걸리는 시간을 단계마다 적어,<br>요청 시점을 정했습니다</h2>
-      <p>요청 부서는 일정을 맞추고, 담당자는 빠뜨리지 않도록 체크리스트를 함께 만들었습니다.</p>
+  <section class="case" id="c1" aria-labelledby="h-p1" data-tab-scope>
+    <div class="rv case-h">
+      <span class="no">01 · 심사 부서 매출 기준 가이드</span>
+      <h2 id="h-p1">같은 문의가 반복될 때,<br>답을 기준으로 만들었습니다</h2>
     </div>
-    <div class="box">
-      <h3>입점 단계와 소요일 <span class="note">· 영업일 약 30일 전 요청 기준</span></h3>
-      <ol class="timeline">
-        <li><b>가맹점번호 채번</b><span class="d">약 5~7일</span></li>
-        <li><b>특약 반영</b><span>카드사별 조건</span></li>
-        <li><b>단말기ID 채번</b><span class="d">약 2일</span></li>
-        <li><b>하위몰 심사</b><span class="d">약 7일</span></li>
-        <li><b>QA</b><span class="d">약 5일</span></li>
-        <li><b>실제 연동</b><span>실매출 확인</span></li>
-      </ol>
+    <div class="rv story">
+      <div><b>상황</b>심사 부서에서 "이 가맹점은 어떤 가맹점번호로 매출을 내야 하나요?"라는 문의가 자주 접수됐습니다.</div>
+      <div><b>제가 본 것</b>문의는 달라 보여도 판단에 쓰는 기준은 업종, 카드사 정책, 혜택 · 실적 조건으로 같았습니다.</div>
+      <div><b>한 일</b>카드사 정책을 바탕으로 판단 순서를 자료로 만들고, 판단이 어려운 건은 제가 직접 답변했습니다.</div>
+      <div><b>바뀐 것</b>심사 부서가 자료를 보고 가맹점번호를 직접 세팅하게 됐습니다.</div>
     </div>
-    <div class="box" data-check>
-      <h3>채번 자가 체크리스트 <span class="note num" data-check-count></span></h3>
-      <div class="check">
-        <div><h4>공통</h4>
-          <label><input type="checkbox">차액정산 대상 여부</label>
-          <label><input type="checkbox">소득공제 · 문화비 해당 여부</label>
-          <label><input type="checkbox">PG · 오픈마켓 업종 구분</label>
+    <div class="rv panel-box">
+      <h3>이 매출은 어떤 가맹점번호로 발생해야 할까</h3>
+      <div class="picker">
+        <div class="opts" role="tablist" data-tabs>
+          <button type="button" role="tab" aria-selected="true" data-target="k1">상품권 · 게임 등 환금성 업종</button>
+          <button type="button" role="tab" aria-selected="false" data-target="k2">제휴카드 혜택 대상 브랜드</button>
+          <button type="button" role="tab" aria-selected="false" data-target="k3">소득공제 제외 대상</button>
+          <button type="button" role="tab" aria-selected="false" data-target="k4">문화비 소득공제 대상</button>
+          <button type="button" role="tab" aria-selected="false" data-target="k5">영세 · 중소 하위몰</button>
         </div>
-        <div><h4>카드사별</h4>
-          <label><input type="checkbox">부분취소 등 카드사 특약</label>
-          <label><input type="checkbox">인증 · 한도 조건</label>
-          <label><input type="checkbox">환금성 업종 규정</label>
-        </div>
-        <div><h4>개설 후</h4>
-          <label><input type="checkbox">단말기ID 채번 확인</label>
-          <label><input type="checkbox">QA 결제 · 취소</label>
-          <label><input type="checkbox">실매출 발생 확인</label>
+        <div>
+          <div class="verdict print-show" role="tabpanel" data-panel="k1" data-label="상품권 · 게임 등 환금성 업종">
+            <ol><li>업종이 카드사 환금성 기준에 해당하는지 확인</li><li>카드사별 환금성 한도 · 인증 조건 확인</li></ol>
+            <p class="to">→ <b>환금성 전용 가맹점번호</b>로 매출 발생</p>
+          </div>
+          <div class="verdict print-show" role="tabpanel" data-panel="k2" data-label="제휴카드 혜택 대상 브랜드" hidden>
+            <ol><li>혜택이 적용되는 카드사와 브랜드 확인</li><li>혜택이 가맹점번호 기준으로 적용되는지 확인</li></ol>
+            <p class="to">→ <b>브랜드 전용 가맹점번호</b>로 매출 발생</p>
+          </div>
+          <div class="verdict print-show" role="tabpanel" data-panel="k3" data-label="소득공제 제외 대상" hidden>
+            <ol><li>업종이 소득공제 제외 대상인지 확인</li><li>개설 공문에 소득공제 제외 처리 요청 여부 확인</li></ol>
+            <p class="to">→ <b>소득공제 제외 가맹점번호</b>로 매출 발생</p>
+          </div>
+          <div class="verdict print-show" role="tabpanel" data-panel="k4" data-label="문화비 소득공제 대상" hidden>
+            <ol><li>도서 · 공연 등 문화비 대상 매출인지 확인</li><li>매출 발생 전 한국문화정보원 등록 여부 확인</li></ol>
+            <p class="to">→ <b>문화비 소득공제 가맹점번호</b>로 매출 발생</p>
+          </div>
+          <div class="verdict print-show" role="tabpanel" data-panel="k5" data-label="영세 · 중소 하위몰" hidden>
+            <ol><li>하위몰이 우대 수수료 대상인지 확인</li><li>가맹점번호에 차액정산 특약이 반영됐는지 확인</li></ol>
+            <p class="to">→ <b>차액정산 특약이 반영된 가맹점번호</b>로 매출 발생</p>
+          </div>
         </div>
       </div>
-      <p class="note">실제 체크리스트의 항목 구성을 요약했습니다. 항목을 눌러 확인해 보실 수 있습니다.</p>
+      <p class="note">판단 순서를 보여 드리기 위한 예시입니다. 실제로는 같은 업종이라도 카드사마다 기준이 달라 카드사별로 확인합니다.</p>
     </div>
+    <p class="rv learn"><b>배운 점</b>운영 기준은 사람이 아니라 문서에 있어야 흔들리지 않습니다. 기준을 문서로 옮기니, 제 시간은 판단이 필요한 건에 집중할 수 있었습니다.</p>
   </section>
 
   <!-- 02 -->
-  <section class="case" id="c2" aria-labelledby="h-p2" data-tab-scope>
-    <div class="case-h">
-      <span class="no">02 · 해외 가맹점 국내 카드 결제</span>
-      <h2 id="h-p2">카드사가 망설일 때,<br>판단할 자료를 먼저 건넸습니다</h2>
-      <p>애플·해외 PSP 연동에서 카드사가 걱정한 것과 제가 준비한 것입니다.</p>
+  <section class="case" id="c2" aria-labelledby="h-p2">
+    <div class="rv case-h">
+      <span class="no">02 · 그룹서비스ID · 서비스ID</span>
+      <h2 id="h-p2">서비스 단위로 묶어야<br>매출이 보였습니다</h2>
     </div>
-    <div class="three">
-      <div class="box"><h3>카드사가 보는 것</h3><ul>
-        <li>매출 규모를 미리 알기 어려움</li>
-        <li>비정상거래·민원이 생겼을 때의 책임 주체</li>
-        <li>해외 매출의 세무 처리 기준</li>
-      </ul></div>
-      <div class="box"><h3>제가 준비한 것</h3><ul>
-        <li>연동이 필요한 이유를 정리한 근거자료</li>
-        <li>카드사별 개설 조건에 맞춘 업종과 서류</li>
-        <li>국세청 해외사업자 가이드를 근거로 한 세무 기준</li>
-      </ul></div>
-      <div class="box wash"><h3>이어진 흐름</h3><ul>
-        <li>입점 → 하위몰 심사 → 결제 연동</li>
-        <li>심사 단계에서 멈추지 않고 연동까지 이어짐</li>
-      </ul></div>
+    <div class="rv story">
+      <div><b>상황</b>가맹점번호만으로는 어떤 서비스의, 어느 하위몰의 매출인지 한눈에 보기 어려웠습니다.</div>
+      <div><b>제가 본 것</b>카드사 정책도, 하위몰 매출도, 회계 처리도 결국 '서비스' 단위로 나뉘어야 했습니다.</div>
+      <div><b>한 일</b>전 카드사 가맹점번호를 그룹서비스ID와 서비스ID 아래로 묶어 매핑을 직접 관리했습니다.</div>
+      <div><b>바뀐 것</b>매출과 정책을 서비스 단위로 나눠 볼 수 있게 됐습니다.</div>
     </div>
-    <div class="box">
-      <div class="tabs" role="tablist" data-tabs>
-        <button type="button" role="tab" aria-selected="true" data-target="g1">판단 자료</button>
-        <button type="button" role="tab" aria-selected="false" data-target="g2">심사 이어 가기</button>
-        <button type="button" role="tab" aria-selected="false" data-target="g3">세무 기준</button>
-        <button type="button" role="tab" aria-selected="false" data-target="g4">취소 분쟁 창구</button>
+    <div class="rv panel-box">
+      <h3>묶는 방식 <span class="note">· 구조를 설명하기 위한 예시</span></h3>
+      <div class="idtree">
+        <div class="lv"><h4>그룹서비스ID</h4><div class="box g">가맹점 A 그룹<small>하나의 사업자 묶음</small></div></div>
+        <div class="lv"><h4>서비스ID</h4>
+          <div class="box">일반결제<small>결제 유형별</small></div>
+          <div class="box">간편결제<small>결제 유형별</small></div>
+          <div class="box">제휴카드 전용<small>카드사 정책별</small></div>
+        </div>
+        <div class="lv"><h4>매핑되는 정보</h4>
+          <div class="box">카드사별 가맹점번호</div>
+          <div class="box">VAN ID</div>
+          <div class="box">채권 매핑 · 한도 · 업종</div>
+        </div>
       </div>
-      <div class="panel print-show" role="tabpanel" data-panel="g1" data-label="판단 자료"><ul class="note">
-        <li>연동이 왜 필요한지, 어떤 거래가 일어날지를 자료로 정리해 카드사에 전달</li>
-        <li>기존 방식으로 개설이 어려운 카드사는 조건에 맞춰 업종과 서류를 조정</li>
-      </ul></div>
-      <div class="panel print-show" role="tabpanel" data-panel="g2" data-label="심사 이어 가기" hidden><ul class="note">
-        <li>입점 협의에서 받은 질문과 자료를 하위몰 심사 단계까지 이어서 전달</li>
-        <li>심사 중 추가 확인이 필요한 항목은 바로 답해 일정이 늘어지지 않게 함</li>
-      </ul></div>
-      <div class="panel print-show" role="tabpanel" data-panel="g3" data-label="세무 기준" hidden><ul class="note">
-        <li>국세청 해외사업자 가이드를 근거로 소득공제 제외 기준을 정리해 카드사에 소명</li>
-        <li>같은 기준을 사내에 공유해 연말정산 대사에 반영</li>
-      </ul></div>
-      <div class="panel print-show" role="tabpanel" data-panel="g4" data-label="취소 분쟁 창구" hidden><ul class="note">
-        <li>글로벌 앱마켓 연동에 맞춰 카드사의 매출 취소 중재 공문을 받을 대표 창구를 정해 회신</li>
-      </ul></div>
     </div>
-    <p class="learn"><b>배운 점</b>카드사가 망설인 이유는 판단할 자료가 부족했기 때문이었습니다. 자료를 먼저 채우니 협의가 빨라졌습니다.</p>
+    <div class="rv purpose">
+      <div><b>카드사 정책 분리</b>인증 · 한도 · 혜택이 다른 매출을 서로 다른 서비스ID로</div>
+      <div><b>하위몰별 매출 분리</b>어느 하위몰 매출인지 서비스 단위로 확인</div>
+      <div><b>서비스 단위 구분</b>정산과 문의 대응을 같은 단위로</div>
+    </div>
+    <p class="note">회계 처리까지 이어지도록, 서비스 단위로 나뉜 매출의 채권전표 처리 방식을 유관부서와 협의해 확정했습니다.</p>
+    <p class="rv learn"><b>배운 점</b>구조를 먼저 잡아 두면 정책, 정산, 민원 대응이 같은 단위로 움직입니다.</p>
   </section>
 
   <!-- 03 -->
   <section class="case" id="c3" aria-labelledby="h-p3" data-tab-scope>
-    <div class="case-h">
-      <span class="no">03 · Chargeback · 결제 분쟁</span>
-      <h2 id="h-p3">차지백은 같은 순서로 처리해야<br>기한을 지킵니다</h2>
-      <p>증빙은 서비스팀에, 기한은 카드사에 있습니다. 그 사이에서 놓치지 않도록 순서를 고정했습니다.</p>
+    <div class="rv case-h">
+      <span class="no">03 · 매입 VAN 다중화 · PM</span>
+      <h2 id="h-p3">결제를 멈추지 않고,<br>매입 경로를 바꿨습니다</h2>
+      <p>카드 결제는 승인으로 끝나지 않습니다. 매입과 정산이 맞아야 카드사와 가맹점 모두에게 대금이 정확히 전달됩니다.</p>
     </div>
-    <div class="box">
-      <h3>차지백이 들어오는 길</h3>
-      <div class="chain"><span>고객</span><i>→</i><span>해외 발급사</span><i>→</i><span>브랜드사</span><i>→</i><span>카드사</span><i>→</i><span class="me">PG · 결제 운영</span><i>→</i><span>가맹점</span></div>
-      <p class="note">해외 발급사가 브랜드사 규칙에 따라 차지백을 걸고, 카드사 공문으로 접수됩니다. 소명은 같은 길을 거꾸로 올라갑니다.</p>
+    <div class="rv story">
+      <div><b>상황</b>월 약 8,000억 원 규모의 매입을, 결제를 멈추지 않은 채 다중화 구조로 옮겨야 했습니다.</div>
+      <div><b>제가 본 것</b>위험은 기본 흐름보다, 전환일을 걸쳐 매입과 취소가 서로 다른 VAN사에서 처리되는 거래에 있었습니다.</div>
+      <div><b>한 일</b>카드사 · VAN사 · 사내 개발의 범위와 일정을 PM으로 총괄하고, QA 시나리오를 직접 설계했습니다.</div>
+      <div><b>바뀐 것</b>매입을 중단 없이 전환했고, 수수료를 거래 단위로 받아 정산 대사의 기반을 마련했습니다.</div>
     </div>
-    <ol class="flow">
-      <li><span class="s">1</span><b>접수</b>카드사 차지백 공문 접수</li>
-      <li><span class="s">2</span><b>현황 기록</b>주문번호·금액·소명 기한 기록</li>
-      <li><span class="s">3</span><b>분석 · 증빙 요청</b>사유를 보고 서비스팀에 필요한 증빙 요청</li>
-      <li><span class="s">4</span><b>소명 제출</b>기한 안에 카드사에 제출</li>
-      <li><span class="s">5</span><b>결과 관리</b>결과 기록과 후속 안내</li>
-    </ol>
-    <div class="box">
-      <h3>결과에 따라 다음 할 일</h3>
+    <div class="rv panel-box">
+      <h3>진행 단계</h3>
+      <ol class="flow four">
+        <li><span class="s">1</span><b>킥오프 · 연동 기획</b>현행 매입 · 대사 프로세스 정리, 범위 확정</li>
+        <li><span class="s">2</span><b>QA 시나리오 설계</b>기본 · 엣지 · 호환 케이스 정의</li>
+        <li><span class="s">3</span><b>베타 실거래 테스트</b>매입부터 차액정산까지 확인</li>
+        <li><span class="s">4</span><b>운영 전환</b>신규 경로 운영과 모니터링</li>
+      </ol>
+    </div>
+    <div class="rv panel-box">
+      <h3>전환 과정의 주요 과제</h3>
       <div class="tabs" role="tablist" data-tabs>
-        <button type="button" role="tab" aria-selected="true" data-target="r1">소명 인정</button>
-        <button type="button" role="tab" aria-selected="false" data-target="r2">재접수</button>
-        <button type="button" role="tab" aria-selected="false" data-target="r3">패소</button>
+        <button type="button" role="tab" aria-selected="true" data-target="w1">테스트 환경</button>
+        <button type="button" role="tab" aria-selected="false" data-target="w3">수수료 항목</button>
       </div>
-      <p class="panel note print-show" role="tabpanel" data-panel="r1" data-label="소명 인정">매출이 유지됩니다. 결과를 현황표에 기록하고 종결합니다.</p>
-      <p class="panel note print-show" role="tabpanel" data-panel="r2" data-label="재접수" hidden>발급사가 다시 차지백을 걸면 추가 증빙을 모아 한 번 더 소명합니다.</p>
-      <p class="panel note print-show" role="tabpanel" data-panel="r3" data-label="패소" hidden>차감 예정일을 서비스팀에 공유하고, 원인을 재발 방지 포인트로 남깁니다.</p>
+      <dl class="sca print-show" role="tabpanel" data-panel="w1" data-label="테스트 환경">
+        <dt>과제</dt><dd>카드사 개발계 구간까지 통신 테스트를 할 수 없는 제약</dd>
+        <dt>조치</dt><dd>카드사와 직접 협의해 개발계 구간까지 테스트할 수 있는 환경 확보</dd>
+      </dl>
+      <dl class="sca print-show" role="tabpanel" data-panel="w3" data-label="수수료 항목" hidden>
+        <dt>과제</dt><dd>수수료를 총합으로만 받아 거래 단위 대사가 어려웠고, 항목 추가는 모든 VAN사가 같은 날 반영해야 정상 동작하는 구조</dd>
+        <dt>조치</dt><dd>매입결과파일에 건별 기본 · 제휴 수수료 항목 추가를 요청하고, 모든 VAN사가 같은 날 적용하도록 동시에 협의</dd>
+      </dl>
     </div>
-    <div class="three" style="grid-template-columns:1fr 1fr">
-      <div class="box"><h3>사례 · 이중청구 주장</h3><ul>
-        <li>고객이 서로 다른 두 예약을 같은 결제로 오인해 이중청구를 주장</li>
-        <li>예약·결제 내역을 대조해 별개 거래임을 사실관계로 소명</li>
-      </ul></div>
-      <div class="box"><h3>사례 · 패소 분석</h3><ul>
-        <li>가맹점이 취소한 뒤 고객과 연락이 닿지 않은 건에서 패소</li>
-        <li>사유와 차감 예정일을 정리해 서비스팀과 재발 방지 포인트 공유</li>
-      </ul></div>
+    <div class="rv purpose">
+      <div><b>월 약 8,000억 원</b>중단 없이 전환한 매입 규모</div>
+      <div><b>건별 수수료 수신</b>거래 단위 정산 대사와 수수료 분석 기반</div>
+      <div><b>PM 기여도 80%</b>카드사 · VAN사 · 사내 개발 일정 총괄</div>
     </div>
-    <p class="learn"><b>배운 점</b>차지백을 줄이려면 가맹점의 취소 처리와 고객 안내 과정까지 함께 봐야 했습니다.</p>
+    <p class="rv learn"><b>배운 점</b>전환 프로젝트의 위험은 예외 거래에 있습니다. 기본 흐름보다 예외 케이스를 먼저 정의해야 일정과 안정성을 함께 확보할 수 있습니다.</p>
   </section>
 
   <!-- 04 -->
-  <section class="case" id="c4" aria-labelledby="h-p4" data-tab-scope>
-    <div class="case-h">
-      <span class="no">04 · 운영 이슈 대응</span>
-      <h2 id="h-p4">승인 실패가 생기면<br>증상 · 원인 · 조치 순서로 기록했습니다</h2>
-      <p>증상은 비슷해도 원인은 제각각입니다. 세 건을 같은 틀로 정리했습니다.</p>
+  <section class="case" id="c4" aria-labelledby="h-p4">
+    <div class="rv case-h">
+      <span class="no">04 · 반복 업무 자동화</span>
+      <h2 id="h-p4">양식은 달라도 정보는 같았습니다,<br>그래서 한 번만 입력하게 했습니다</h2>
+      <p>개설 서류 자동 작성 도구의 동작 원리를 아래에서 직접 실행해 보실 수 있습니다.</p>
     </div>
-    <div class="box">
-      <div class="tabs" role="tablist" data-tabs>
-        <button type="button" role="tab" aria-selected="true" data-target="i1">오픈 전 승인 거절</button>
-        <button type="button" role="tab" aria-selected="false" data-target="i2">카드사 미매핑</button>
-        <button type="button" role="tab" aria-selected="false" data-target="i3">취소 반송</button>
-      </div>
-      <dl class="sca panel print-show" role="tabpanel" data-panel="i1" data-label="오픈 전 승인 거절">
-        <dt>증상</dt><dd>오픈 전 베타 테스트에서 일부 카드사의 승인이 거절됨</dd>
-        <dt>원인</dt><dd>환금성 구분값과 2차 인증 적용이 빠져 있었음</dd>
-        <dt>조치</dt><dd>카드사에 원인 확인을 요청하고 내부 설정을 함께 점검해 오픈 일정 안에 해결</dd>
-      </dl>
-      <dl class="sca panel print-show" role="tabpanel" data-panel="i2" data-label="카드사 미매핑" hidden>
-        <dt>증상</dt><dd>특정 업종 가맹점의 결제가 실패함</dd>
-        <dt>원인</dt><dd>카드사 쪽 매핑이 되어 있지 않았음</dd>
-        <dt>조치</dt><dd>카드사에 매핑을 요청하고 결제가 정상 처리되는지 확인</dd>
-      </dl>
-      <dl class="sca panel print-show" role="tabpanel" data-panel="i3" data-label="취소 반송" hidden>
-        <dt>증상</dt><dd>결제 취소가 반송됨</dd>
-        <dt>원인</dt><dd>카드사의 미수금 한도가 부족했음</dd>
-        <dt>조치</dt><dd>카드사의 한도 산정 기준을 확인해 내부에 공유</dd>
-      </dl>
+    <div class="rv story">
+      <div><b>상황</b>카드사마다 양식이 다른 개설 서류를 매번 수기로 작성했고, 오타 하나로 반려되기도 했습니다.</div>
+      <div><b>제가 본 것</b>양식은 달라도 들어가는 정보는 신청일, 간판명, 입금계좌처럼 대부분 같았습니다.</div>
+      <div><b>한 일</b>공통 정보를 한 번 입력하면 카드사별 서류가 완성되는 도구를 기획 · 개발했습니다.</div>
+      <div><b>바뀐 것</b>서류 작성 시간이 건당 약 30분에서 10초 내외로 줄었고, 팀 공용 도구로 정착했습니다.</div>
     </div>
-  </section>
-
-  <!-- 05 -->
-  <section class="case" id="c5" aria-labelledby="h-p5">
-    <div class="case-h">
-      <span class="no">05 · AI · 자동화 도구 활용</span>
-      <h2 id="h-p5">한 번 입력하면,<br>카드사별 서류가 함께 만들어집니다</h2>
-      <p>양식은 달라도 들어가는 정보는 같았습니다. 동료와 함께 만든 도구의 원리를 아래에서 눌러 보실 수 있습니다.</p>
-    </div>
-    <div class="box demo">
+    <div class="rv panel-box demo">
       <form data-demo>
         <label for="d-date">신청일<input id="d-date" name="date" placeholder="2026.10.26"></label>
         <label for="d-name">간판명<input id="d-name" name="name" placeholder="예시상점"></label>
         <label for="d-acct">대금 입금계좌<input id="d-acct" name="acct" placeholder="가상은행 000-0000-0000"></label>
-        <label for="d-req">요청자<input id="d-req" name="req" placeholder="장소은 / 결제 운영"></label>
+        <label for="d-req">요청자<input id="d-req" name="req" placeholder="장소은 / 결제인프라"></label>
         <button type="submit">서류 자동 작성</button>
       </form>
       <div class="forms">
@@ -222,16 +200,17 @@
           <dl><dt>입금계좌</dt><dd data-field="acct">—</dd><dt>작성일</dt><dd data-field="date">—</dd><dt>상호(간판)</dt><dd data-field="name">—</dd><dt>의뢰자</dt><dd data-field="req">—</dd></dl></div>
       </div>
     </div>
-    <p class="note">가상 데이터로 동작 원리를 재현한 데모입니다. 카드사명과 양식은 예시입니다.</p>
+    <p class="rv note">가상 데이터로 동작 원리를 재현한 데모입니다. 카드사명과 양식은 예시입니다.</p>
+    <p class="rv learn"><b>배운 점</b>반복 작업을 줄이면 오류도 함께 줄어듭니다. 절감한 시간은 검토가 필요한 업무에 투입했습니다.</p>
   </section>
 
-  <section class="end">
-    <h2>한 건을 끝까지 따라가,<br>다음 사람이 쓸 수 있게 남깁니다</h2>
-    <p>다섯 사례에서 만든 문서와 도구는 지금도 팀에서 쓰이고 있습니다.</p>
-    <div class="mail-row"><code>thdms5478@naver.com</code><button type="button" data-copy="thdms5478@naver.com">이메일 복사</button></div>
+  <section class="end rv">
+    <h2>기준을 만들고,<br>그 기준이 지켜지게 운영합니다.</h2>
+    <p>네 경험에서 만든 기준 자료와 도구는 인수인계 문서와 함께 팀에 남겨 두었습니다.</p>
+    <div class="mail"><code>thdms5478@naver.com</code><button type="button" data-copy="thdms5478@naver.com">이메일 복사</button></div>
   </section>
 
-  <nav class="pager" aria-label="서류 이동"><a href="career.html">← <b>경력기술서</b></a><a href="index.html">처음으로 · <b>홈</b> →</a></nav>
+  <nav class="pager" aria-label="서류 이동"><a href="career.html">← 경력기술서</a><a href="index.html">처음으로 · 홈 →</a></nav>
 </main>
 <footer class="foot">© 2026 장소은</footer>
 <script src="assets/js/main.js"></script>
